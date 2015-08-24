@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Orientation 2015</title>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/orientation.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+</head> 
+	
+<body>
+
+<div id="ad"></div>
+
+<!-- ########################################### NAVBAR ##########################################################  --> 
+<header id="header">
+	<nav id="nav">
+		<ul>
+			<li><a href="#slide1" class="active" title="Next Section" >Welcome<br> to CU</a></li>
+			<li><a href="#slide2" title="Next Section">Course <br> Registration</a></li>
+			<li><a href="#slide3" title="Next Section">Food & <br> Drinks</a></li>
+			<li><a  href="#slide4" title="Next Section">Subway <br> Map</a></li>
+			<li><a href="#slide5" title="Next Section">116 <br> Traditions</a></li>
+			<li><a href="#slide6" title="Next Section">Campus <br> Resources</a></li>
+			<li><a href="#slide7" title="Next Section">Student <br> Groups</a></li>
+			<li><a href="#slide8" title="Next Section">Stories to <br> Watch</a></li>
+			<li><a href="#slide9" title="Next Section">Who's Who <br> at CU</a></li>
+			<li><a href="#slide10" title="Next Section">Study <br> Spaces</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+<!-- ########################################### SLIDE 1 ##########################################################  -->  
+
+<div id="slide1">
+	<div class="space-for-ad">
+		<div id="plain-image"></div> 
+		<div id="welcome-message">
+			<div id="welcome-title">Welcome to Columbia University from Spectator!</div>
+			<br>Ahae orsuam publi in a rem Romnovit. Etratius, firis prid sulto intestia clego et virtem, vivistrips, ut in Itamquam horbis es contiere, sid rei pulico trei senit vo, ca; hi, mur ut vehemus, vite, Catumei consus C. Quam orei con detis vivesilium nortam mei inum unultortam pata patuium sulvidite nonit igit. Sa rei poeriberum et facierte ium notervit nu simunu verenih icionum unum stratam Romnonsil capereci con ve, omnest es nostin alin deperfecre que apere- bus nonsule rvideatque intilistra tamquem, Cuppliam es bon temus audesic ibeferium acerit, num essentiam rei publibuline catim vivirmili, Ti. Asteret vemo considi endite abus comnissedet; nonstat re essenatis, nonum untemus publi sultus bon hacchus; niureconsum revid de acipicus, acitus enerim et facit, que nim plicae cerimunum audem- nostam tua L. Sus, quo porbi init. <br> Am. Fuius At actus iam prae, tea st pribus horte num nonfente cotiurbit; nem sulibute fue nium sus consusul hoc factala bultod is, efex nostaticiam, cut L. Scit? O te fure num mo iacivasta, nos conere, condam feci sicum nostem, que ceret ipientrem eniciaed inatien interei pro consulicae aut Catia? Otemuli forit? Nihilin vid cupion vidi tatis facchuitum nocum in iusquon ditia? Ne ne rem in prehem publicaed intissua reo iam sentem ducturestiam vilicat uidefac rentius abultus es hora inamdit. Tore, faut inum tam in iam re niur, quam inum tam noc issolto eruro, nu- mus; hussesi praedemquius faciam pribusperei culi, consus crebussa it intela nihilia cupiem fit, vit vium, coenihiliis. Num ce quastrae convehem essulles in apecupi octemur artiam iam isque nostam publius consulem nis redo, di- entif ecertiliis imuri sin spic forudes addum culicia mporei sendesu larteba tastrac medicaetis; C. M. Scia coernim ovilibunimo mover adetrum dem sediis, sedelica; ius vendin tebatic ibemnost viverid emnonsultum traestr ebatquo mercere nsulicipses prature natiam ora intelibus
+		</div>
+	</div>
+</div> 
+
+<!-- ########################################### SLIDE 2 ##########################################################  -->
+
+<div id="slide2">
+	<div class="slide-title">Course Registration</div>
+	<div class="space-for-ad">
+		<div class="fluid-container">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="two-line-text">
+						<h1> Courses We Loved </h1>
+						<h2> Click a course to see why we recommend it </h2>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<button class="course-box" type="button" data-toggle="modal" data-target="#exampleModal">
+								<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg">
+								<div class="course-box-text">
+									<h1> Intro to Electrical Engineering </h1>
+									<h2> Rachit Mohan <br> Head of Product </h2>
+								</div>
+							</button>
+						</div>
+						<div class="col-xs-6">
+							<button class="course-box" type="button" data-toggle="modal" data-target="#exampleModal">
+								<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg">
+								<div class="course-box-text">
+									<h1> Intro to Electrical Engineering </h1>
+									<h2> Rachit Mohan <br> Head of Product </h2>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<button class="course-box" type="button" data-toggle="modal" data-target="#exampleModal">
+								<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg">
+								<div class="course-box-text">
+									<h1> Intro to Electrical Engineering </h1>
+									<h2> Rachit Mohan <br> Head of Product </h2>
+								</div>
+							</button>
+						</div>
+						<div class="col-xs-6">
+							<button class="course-box" type="button" data-toggle="modal" data-target="#exampleModal">
+								<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg">
+								<div class="course-box-text">
+									<h1> Intro to Electrical Engineering </h1>
+									<h2> Rachit Mohan <br> Head of Product </h2>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<button class="course-box" type="button" data-toggle="modal" data-target="#exampleModal">
+								<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg">
+								<div class="course-box-text">
+									<h1> Intro to Electrical Engineering </h1>
+									<h2> Rachit Mohan <br> Head of Product </h2>
+								</div>
+							</button>
+						</div>
+						<div class="col-xs-6">
+							<button class="course-box" type="button" data-toggle="modal" data-target="#exampleModal">
+								<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg">
+								<div class="course-box-text">
+									<h1> Intro to Electrical Engineering </h1>
+									<h2> Rachit Mohan <br> Head of Product </h2>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<button class="course-box" type="button" data-toggle="modal" data-target="#exampleModal">
+								<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg">
+								<div class="course-box-text">
+									<h1> Intro to Electrical Engineering </h1>
+									<h2> Rachit Mohan <br> Head of Product </h2>
+								</div>
+							</button>
+						</div>
+						<div class="col-xs-6">
+							<button class="course-box" type="button" data-toggle="modal" data-target="#exampleModal">
+								<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg">
+								<div class="course-box-text">
+									<h1> Intro to Electrical Engineering </h1>
+									<h2> Rachit Mohan <br> Head of Product </h2>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<h1> How to Register </h1>
+					<iframe width="560" height="315" style="margin:38px auto 30px auto; display:block;" src="https://www.youtube.com/embed/WSk7_I-WHV8" frameborder="0" allowfullscreen></iframe>
+					<h2></h2>
+					<h1> Registration tools: a guide </h1>
+					<div class="row">
+						<div class="col-xs-6" style="border-right:dotted 3px;">
+							<img src="http://www.coursesatcu.com/assets/Courses@CU%20logo-01b9a39de9d0f6a127935f61e6d44902.png" height="50px" width="auto" style="margin:0px auto 15px auto; display:block;">
+							<ul>
+								<li>Temporep eribus. Asi reiurib eaquame poreperiae eum sint</li>
+								<li>Erum fuga. Nam fugitatium nihit, solupta turessit qui core- perchic totatat optur, vitat.</li>
+								<li>Aquunt ut reiuntiant fuga. Ita quibus, andaepe rspellupis ex- plandandi autectus</li>
+								<li>Arionsectur sunt et offi- ciusame nullabo. Raectempor audi dollaut quis emos non- dam se, su mandacchiliu quis- sup imperte intimen tiussoli, te prae porum duc tion vi</li>
+							</ul>
+						</div>
+						<div class="col-xs-6">
+							<img src="https://vergil.registrar.columbia.edu/img/vergil-logo-2x.png" height="50px" width="auto" style="margin:0px auto 15px auto; display:block; background-color: #789CC0;">
+							<ul style="padding-right:15px; margin-left:-15px;">
+								<li>Temporep eribus. Asi reiurib eaquame poreperiae eum sint</li>
+								<li>Erum fuga. Nam fugitatium nihit, solupta turessit qui core- perchic totatat optur, vitat.</li>
+								<li>Aquunt ut reiuntiant fuga. Ita quibus, andaepe rspellupis ex- plandandi autectus</li>
+								<li>Arionsectur sunt et offi- ciusame nullabo. Raectempor audi dollaut quis enos non- dam se, su mandacchiliu quis- sup imperte intimen tiussoli, te prae porum duc tion vi</li>
+							</ul>
+
+						</div>	
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+</div> 
+
+
+<!-- ########################################### SLIDE 3 ##########################################################  -->
+
+<div id="slide3">
+	<div class="slide-title">Food and Drinks</div>
+	<div class="space-for-ad">
+		<div class="fluid-container">
+			<div class="row">
+				<div class="col-xs-8">
+					<h1> Select a map, then click on a dot to learn more </h1>
+					<div style="text-align: center;">
+						<button id="morningside-button" class="orientation-button active" onClick="toMorningsideMap(this)">Morningside</button>
+						<button id="manhattan-button" class="orientation-button" onClick="toManhattanMap(this)">Manhattan</button>
+					</div>
+					<div id="food-container">
+						<div id="food-map"></div>
+						<div id="restaurant-description">
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div style="padding-right:15px; margin-left=-15px;">
+					<h1>Ways to Save Money <br>and Eat Cheap</h1>
+					<div class="eat-cheap-blurb">
+						<h1>Eat@CU Rewards</h1>
+						<h2>Ferit laut eliquis sitiunt istiandam sus accatur aliquiam des vollupt asimint venim et re nimag- nis mod quis molorupta aut maio. Ga. Nem. Molupta conse lacieturem isquam invende sunte imus, quid quam, velesequasi doloris quodit magnimi nction net ea si od ut alitatur? Quiam faccus expelectatia pedi ut vellitas ini- tius eaquam nectati ullenis modic</h2>
+					</div>
+					<div class="eat-cheap-blurb">
+						<h1>Eat@CU Deals</h1>
+						<h2>Ferit laut eliquis sitiunt istiandam sus accatur aliquiam des vollupt asimint venim et re nimag- nis mod quis molorupta aut maio. Ga. Nem. Molupta conse lacieturem isquam invende sunte imus, quid quam, velesequasi doloris quodit magnimi nction net ea si od ut alitatur? Quiam faccus expelectatia pedi ut vellitas ini- tius eaquam nectati ullenis modic</h2>
+					</div>
+					<div class="eat-cheap-blurb">
+						<h1>CU Meal Share</h1>
+						<h2>Ferit laut eliquis sitiunt istiandam sus accatur aliquiam des vollupt asimint venim et re nimag- nis mod quis molorupta aut maio. Ga. Nem. Molupta conse lacieturem isquam invende sunte imus, quid quam, velesequasi doloris quodit magnimi nction net ea si od ut alitatur? Quiam faccus expelectatia pedi ut vellitas ini- tius eaquam nectati ullenis modic</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 
+
+<!-- ########################################### SLIDE 4 ##########################################################  -->
+
+
+<div id="slide4">
+	<div class="slide-title">Subway Map</div>
+	<div class="space-for-ad">
+		<div class="fluid-container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1> Select a destination on the <div id="train-name">1</div> to begin exploring </h1>
+					<div id="subway-line">
+						<div id="subway-stops-container">
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-5">
+					<h1 style="font-size: 21px;">Click a dot to see more information</h1>
+					<div id="subway-stop-map"></div>
+				</div>
+
+				<div class="col-xs-7">
+					<div id="subway-area-site"></div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div> 
+
+
+<div id="slide5">
+	<div class="slide-title">116 Traditions</div>
+	<div class="space-for-ad">
+		<div class="fluid-container">
+		</div>
+	</div> 
+</div> 
+
+
+<div id="slide6">
+	<div class="slide-title">Campus Resources</div>
+	<div class="space-for-ad">
+		<div class="fluid-container">
+			<div class="row">
+				<div class="col-xs-12">
+				</div>
+			</div>
+		</div>
+	</div> 
+</div> 
+
+<div id="slide7">
+	<div class="slide-title">Student Groups</div>
+	<div class="space-for-ad">
+		<div class="fluid-container">
+			<div class="row">
+				<div class="col-xs-4">
+					<h1>Select a category:</h1>
+					<div class="row">
+						<div class="col-xs-6">
+							<button class="orientation-button active" onClick="selectCategory(this)">Cultural</button>
+						</div>
+						<div class="col-xs-6">
+							<button class="orientation-button" onClick="selectCategory(this)">Greek Life</button>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px;">
+						<div class="col-xs-6">
+							<button class="orientation-button" onClick="selectCategory(this)">Engineering</button>
+						</div>
+						<div class="col-xs-6">
+							<button class="orientation-button" onClick="selectCategory(this)">Magazines</button>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px;">
+						<div class="col-xs-6">
+							<button class="orientation-button" onClick="selectCategory(this)">Academics</button>
+						</div>
+						<div class="col-xs-6">
+							<button class="orientation-button" onClick="selectCategory(this)">Other Stuff</button>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px;">
+						<div class="col-xs-6">
+							<button class="orientation-button" onClick="selectCategory(this)">Professional</button>
+						</div>
+						<div class="col-xs-6">
+							<button class="orientation-button" onClick="selectCategory(this)">Airplanes</button>
+						</div>
+					</div>
+					<div style="height: 15px;border-bottom:dotted 3px white; width: 100%; margin-bottom: 5px;"></div>
+					<h1>Select a sub-category:</h1>
+					<ul class="subcategories">
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>
+					</ul>
+				</div>
+				<div class="col-xs-8">
+					<div class="groups-description">
+						<h1 id="subcategory-title">South Asian Groups</h1>
+						<div id="subcategory-img"></div>
+						<div id="longform-descriptions">
+							<h1>Club Zamana</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
+							</h2>
+							<h1>Asian American Alliance</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
+							</h2>
+							<h1>Club Zamana</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
+							</h2>
+							<h1>Asian American Alliance</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
+							</h2>
+							<h1>Club Zamana</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
+							</h2>
+							<h1>Asian American Alliance</h1
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+</div> 
+
+<!-- ########################################### MODALS ##########################################################  -->
+
+<!-- CLASS RECOMMENDATION MODALS: --> 
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header dotted-bottom" style="color:black;">
+          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+          	<h1 style="color:black; line-height:10px;">CLASS NAME</h1>
+			<h2 style="color:black; line-height:8px;">PROFESSOR NAME</h2>
+		</div>
+        <div class="modal-body row">
+		  <div class="col-xs-4">
+	      	<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg" width="100%">
+	      	<div class="modal-h1"> Rachit Mohan <br> Head of Product </div>
+	      	<div class="modal-h2"> Class Year: 2017 <br> Major: Biomedical Eng. <br> <br> Learn more about Rachit at <a href='http://www.specpublishing.com/join'>specpublishing.com/join</a></div>
+		  </div>
+		  <div class="col-xs-8"> <h3>
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum sapien orci. Aliquam a lectus varius, feugiat justo eget, porttitor mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse facilisis viverra elit sit amet dignissim. Mauris pretium, sapien eu laoreet sollicitudin, elit velit molestie magna, et iaculis nulla ipsum quis neque. Mauris non sagittis tellus. Curabitur commodo velit at dignissim tempus. In massa ante, dapibus at pellentesque quis, ornare vitae dolor.
+		    <br>
+			Sed ullamcorper pellentesque ante sed efficitur. Phasellus quis bibendum magna, at rhoncus enim. Cras vestibulum sapien nec turpis ultricies dapibus. Etiam lectus enim, ultrices eu eleifend ac, scelerisque eu est. Quisque ultricies efficitur condimentum. Mauris condimentum gravida maximus. Sed ut consectetur libero, vitae ultrices leo. Pellentesque cursus molestie egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam pretium nec orci eu pulvinar.
+			<br>
+			Aliquam convallis nunc non luctus suscipit. Nunc vel condimentum nulla, tincidunt aliquam diam. Curabitur nisl ipsum, pharetra id lorem volutpat, posuere porta ex. Pellentesque gravida odio eu velit volutpat, nec semper est euismod. Duis eget nisl augue. Donec et sollicitudin ex, vel dignissim tellus. Curabitur molestie bibendum quam ut convallis. Sed dolor nunc, malesuada a metus ac, elementum varius ipsum. Fusce ullamcorper risus elit, non tristique sem pretium et. Aliquam egestas convallis pharetra. Aliquam erat volutpat. </h3>
+		  </div>
+        </div>
+        <div class="modal-footer dotted-top">
+        	<div class="modal-h1">What Past Students Think:</div>
+        	<div class="modal-h2">Data from Courses@CU Quick Reviews</div>
+        	<div class="row">
+        		<div class="col-xs-4">
+        			<div class="modal-percent">
+	        			89%
+	        		</div>
+					<div class="modal-h2">Recommend the Class</div>
+        		</div>
+        		<div class="col-xs-4">
+        			<div class="modal-percent">
+	        			100%
+	        		</div>
+					<div class="modal-h2">Professor Approval</div>
+        		</div>
+        		<div class="col-xs-4">
+        			<div class="modal-percent">
+	        			67%
+	        		</div>
+					<div class="modal-h2">Say Workload is Intense</div>
+        		</div>
+        	</div>
+        	<div class="modal-container">
+        		<a href="http://www.coursesatcu.com/" class="modal-h2">Click here to learn more at Courses@CU</a>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
