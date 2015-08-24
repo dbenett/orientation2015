@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Orientation 2015</title>
     <link rel="stylesheet" href="css/style.css"/>
@@ -16,32 +16,32 @@
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
 	<script>
    
-<!----- JQUERY FOR SLIDING NAVIGATION --->   
-$(document).ready(function() {
-  $('a[href*=#]').each(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
+	<!----- JQUERY FOR SLIDING NAVIGATION --->   
+	$(document).ready(function() {
+	  $('a[href*=#]').each(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	    && location.hostname == this.hostname
+	    && this.hash.replace(/#/,'') ) {
+	      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+	      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+	       if ($target) {
+	         var targetOffset = $target.offset().top;
 
-<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-         $(this).click(function() {
-            $("#nav li a").removeClass("active");
-            $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           return false;
-         });
-      }
-    }
-  });
+	<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+	         $(this).click(function() {
+	            $("#nav li a").removeClass("active");
+	            $(this).addClass('active');
+	           $('html, body').animate({scrollTop: targetOffset}, 1000);
+	           return false;
+	         });
+	      }
+	    }
+	  });
 
-});
+	});
 
 
-</script>
+	</script>
 
 
 </head> 
@@ -288,14 +288,521 @@ $(document).ready(function() {
 	</div>
 </div> 
 
+<!-- ########################################### SLIDE 5 ##########################################################  -->
+
 
 <div id="slide5">
 	<div class="slide-title">116 Traditions</div>
 	<div class="space-for-ad">
 		<div class="fluid-container">
+			<!--Container for left side elements-->
+			<div class="col-xs-4">
+				<h1> Check off these traditions as you complete them! </h1>
+				<div id="traditions-container">
+					
+					<!--Div containing all the traditions-->
+					<div class="traditions-container">
+					
+						<div class="tradition" onclick="clickTradition(this);" id="no-1">
+							<div class="trad-number">1</div>
+							<div class="trad-descip">Enter the 116th Street gates and sing <a href="http://en.wikipedia.org/wiki/Roar,_Lion,_Roar">“Roar, Lion, Roar”</a> on the first night of orientation.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-2">
+							<div class="trad-number">2</div>
+							<div class="trad-descip">Check out all five boroughs. Alternatively, set foot in four and look at Staten Island on the subway map.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-3">
+							<div class="trad-number">3</div>
+							<div class="trad-descip">Try to figure out the <a href="http://columbiaspectator.com/2012/02/16/examining-barnard-columbia-relationship">Barnard-Columbia relationship</a>. Give up and realize that students from both sides of Broadway are great.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-4">
+							<div class="trad-number">4</div>
+							<div class="trad-descip">Lock yourself out of your room while in a towel and flip-flops. Proceed to Hartley or the security desk.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-5">
+							<div class="trad-number">5</div>
+							<div class="trad-descip">Lock yourself out of your room while dressed. Borrow towel and cell phone from friend and call Hartley to say you are locked out and undressed (lazy bums only).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-6">
+							<div class="trad-number">6</div>
+							<div class="trad-descip">Enroll in an 8:40 a.m. or Friday class. Never go.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-7">
+							<div class="trad-number">7</div>
+							<div class="trad-descip">Get a Broadway shake at <a href="http://columbiaspectator.com/tags/toms-restaurant">Tom’s</a> after 3 a.m.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-8">
+							<div class="trad-number">8</div>
+							<div class="trad-descip">Graduate without ever setting foot in Camille's, Mondel, or Samad's Gourmet.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-9">
+							<div class="trad-number">9</div>
+							<div class="trad-descip">Detach your closet door. Play beer pong on it.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-10">
+							<div class="trad-number">10</div>
+							<div class="trad-descip">Sign up for 20 clubs. Get spammed for the next four years.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-11">
+							<div class="trad-number">11</div>
+							<div class="trad-descip">Forget to transfer at 96th Street. <a href="http://columbiaspectator.com/2012/08/26/take-1-train-how-get-around-underground">Never make that mistake again.</a></div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-12">
+							<div class="trad-number">12</div>
+							<div class="trad-descip">Catch someone moving your laundry.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-13">
+							<div class="trad-number">13</div>
+							<div class="trad-descip">Do your laundry at midnight during the middle of the week just so you can do your laundry.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-14">
+							<div class="trad-number">14</div>
+							<div class="trad-descip">Develop a vague idea about what <a href="http://columbiaspectator.com/tags/manhattanville">Manhattanville</a> is. Realize it probably won’t affect you, but argue about it anyway.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-15">
+							<div class="trad-number">15</div>
+							<div class="trad-descip">Listen to Vampire Weekend’s discography. Alternatively, lie about having listened to Vampire Weekend.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-16">
+							<div class="trad-number">16</div>
+							<div class="trad-descip">Pretend to know the acronyms used on campus. Nod your head in fake understanding until you actually learn them.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-17">
+							<div class="trad-number">17</div>
+							<div class="trad-descip">Get sexiled. Sleep in the lounge.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-18">
+							<div class="trad-number">18</div>
+							<div class="trad-descip">Eat a slice of <a href="http://columbiaspectator.com/tags/koronet">Koronet</a> pizza after a long night of drinking. Return another day to discover it’s not as good when you’re sober.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-19">
+							<div class="trad-number">19</div>
+							<div class="trad-descip"><a href="http://www.wikicu.com/Tunnels">Explore the tunnels</a>. Alternatively, dream about exploring the tunnels.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-20">
+							<div class="trad-number">20</div>
+							<div class="trad-descip">Watch the <a href="http://columbiaspectator.com/tags/varsity-show">Varsity Show</a> each year at Columbia. Notice repetition of tired Barnard jokes. Also GS jokes. And SEAS jokes.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-21">
+							<div class="trad-number">21</div>
+							<div class="trad-descip">Register for a class without consulting <a href="http://www.culpa.info">CULPA</a>. Never do it again.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-22">
+							<div class="trad-number">22</div>
+							<div class="trad-descip">Take a class on the seventh floor of Hamilton. Hate yourself for it.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-23">
+							<div class="trad-number">23</div>
+							<div class="trad-descip">Get a fake ID. Still get rejected from bars.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-24">
+							<div class="trad-number">24</div>
+							<div class="trad-descip">Go to a frat party (just one).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-25">
+							<div class="trad-number">25</div>
+							<div class="trad-descip">Get an A without ever doing the reading (humanities classes only).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-26">
+							<div class="trad-number">26</div>
+							<div class="trad-descip"><a href="http://columbiaspectator.com/tags/protest">Protest</a> something.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-27">
+							<div class="trad-number">27</div>
+							<div class="trad-descip"><a href="http://columbiaspectator.com/tags/protest">Counterprotest</a> something.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-28">
+							<div class="trad-number">28</div>
+							<div class="trad-descip">Get <a href="http://spectrum.columbiaspectator.com/category/the-shaft">shafted</a> in McBain. Instagram passive-aggressive posts of the shaft view. Do this until you lose all your followers.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-29">
+							<div class="trad-number">29</div>
+							<div class="trad-descip">Eat at Sylvia’s in Harlem.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-30">
+							<div class="trad-number">30</div>
+							<div class="trad-descip">Realize Harlem is a lot safer and more interesting than you thought it was.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-31">
+							<div class="trad-number">31</div>
+							<div class="trad-descip">Go to Health Services with a cold. Leave with condoms.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-32">
+							<div class="trad-number">32</div>
+							<div class="trad-descip">Have fun at <a href="http://columbiaspectator.com/tags/glass-house-rocks">Glass House Rocks</a>. Once it’s over, be reminded about how much Lerner sucks.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-33">
+							<div class="trad-number">33</div>
+							<div class="trad-descip">Go to a campus group’s performance. Cheer obnoxiously for the friend you know.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-34">
+							<div class="trad-number">34</div>
+							<div class="trad-descip">Go to <a href="http://spectrum.columbiaspectator.com/tag/midnight-breakfast">Midnight Breakfast</a> and drown your pre-exam jitters in syrup and ’90s pop music.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-35">
+							<div class="trad-number">35</div>
+							<div class="trad-descip">Make friends with maintenance workers and security guards (and buy their CDs).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-36">
+							<div class="trad-number">36</div>
+							<div class="trad-descip">Participate in PrezBo’s 5K fun run.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-37">
+							<div class="trad-number">37</div>
+							<div class="trad-descip">Witness a Columbia athletics victory. High-five Roar-ee.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-38">
+							<div class="trad-number">38</div>
+							<div class="trad-descip">Subscribe to each new philosopher you read. Believe in nothing but social constructs at one point in your college career.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-39">
+							<div class="trad-number">39</div>
+							<div class="trad-descip">Finish your Nine Ways of Knowing as early as possible. Never remember all nine of them at the same time (BC only).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-40">
+							<div class="trad-number">40</div>
+							<div class="trad-descip">Read a text from every author on the Butler frieze. Find out who <a href="http://en.wikipedia.org/wiki/Demosthenes">Demosthenes</a> is and let us know.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-41">
+							<div class="trad-number">41</div>
+							<div class="trad-descip">Take a walk of shame. Run into your professor. Understand true shame.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-42">
+							<div class="trad-number">42</div>
+							<div class="trad-descip">Spend freshman year rotating through Mel’s, The Heights, 1020, and Cannon’s. Then pick one sophomore year and never go anywhere else.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-43">
+							<div class="trad-number">43</div>
+							<div class="trad-descip">Change your major. Twice.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-44">
+							<div class="trad-number">44</div>
+							<div class="trad-descip">Take the vertical tour of Saint John the Divine. Be genuinely awed.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-45">
+							<div class="trad-number">45</div>
+							<div class="trad-descip">Take part in <a href="http://columbiaspectator.com/news/2014/04/10/seniors-gather-40s-40-42-days-commencement">40s on 40 on Low Steps</a>. If it still exists. If not, pour out a 40 for another casualty of the War on Fun.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-46">
+							<div class="trad-number">46</div>
+							<div class="trad-descip">Watch the sunrise from Butler. Marvel at its beauty through your bloodshot eyes.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-47">
+							<div class="trad-number">47</div>
+							<div class="trad-descip">See a movie filming on campus. When the movie comes out, go see it and obnoxiously point out Columbia scenes to your friends.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-48">
+							<div class="trad-number">48</div>
+							<div class="trad-descip">Go to a <a href="http://columbiaspectator.com/tags/fireside-chat">fireside chat</a>. Eat mini-burgers and chocolate chip cookies in PrezBo’s living room.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-49">
+							<div class="trad-number">49</div>
+							<div class="trad-descip">Sneak onto the roof of Mudd or IAB for a picnic.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-50">
+							<div class="trad-number">50</div>
+							<div class="trad-descip">Take a class on something you know absolutely nothing about.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-51">
+							<div class="trad-number">51</div>
+							<div class="trad-descip">Eat brunch at Community while hungover. Temporarily forget your woes until you receive the check.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-52">
+							<div class="trad-number">52</div>
+							<div class="trad-descip">Make 2 a.m. halal your comfort food of choice.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-53">
+							<div class="trad-number">53</div>
+							<div class="trad-descip">Only take: <a href="http://columbiaspectator.com/news/2014/04/29/m60-select-bus-service-launch-may-25-dot-says">the M60 to LaGuardia</a>/the train to Newark/a taxi to JFK.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-54">
+							<div class="trad-number">54</div>
+							<div class="trad-descip">Pull an all-nighter with the rest of your floor studying for <a href="http://columbiaspectator.com/2013/05/10/professor-hints-passage-ids-lit-hum-final-id-section-will-not-be-graded">the Lit Hum final</a>.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-55">
+							<div class="trad-number">55</div>
+							<div class="trad-descip">Find a study spot in Butler. Sleep there to keep it during finals week.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-56">
+							<div class="trad-number">56</div>
+							<div class="trad-descip">Go to <a href="http://columbiaspectator.com/2014/05/08/orgo-night-live-blog">Orgo Night</a>. Feel conflicted about what you’re laughing at.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-57">
+							<div class="trad-number">57</div>
+							<div class="trad-descip">Attend <a href="http://columbiaspectator.com/tags/take-back-night">Take Back the Night</a>.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-58">
+							<div class="trad-number">58</div>
+							<div class="trad-descip">Spend a vacation on campus while it’s empty. Enjoy it until the crushing loneliness hits you. Vow to appreciate your friends more.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-59">
+							<div class="trad-number">59</div>
+							<div class="trad-descip">Go to <a href="http://columbiaspectator.com/tags/postcrypt">Postcrypt</a> in St. Paul’s Chapel. Dress like a hipster.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-60">
+							<div class="trad-number">60</div>
+							<div class="trad-descip">Quote a Core text outside of class. Bonus points if you do it at a cocktail party.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-61">
+							<div class="trad-number">61</div>
+							<div class="trad-descip">Go to the <a href="http://columbiaspectator.com/tags/world-leaders-forum">World Leaders Forum</a> and shake hands with a foreign leader. Bonus points if it’s a brutal autocrat. Alternatively, never manage to sign up in time. Complain about the limited seating anytime Columbia is called a “global university.”
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-62">
+							<div class="trad-number">62</div>
+							<div class="trad-descip">Have a snowball fight on Low Plaza. (Bonus points if you get on the news for doing it.)
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-63">
+							<div class="trad-number">63</div>
+							<div class="trad-descip">Ignore the red flags on South Lawn.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-64">
+							<div class="trad-number">64</div>
+							<div class="trad-descip">Pretend that Low Steps are your local beach when it gets nice out. (Only possible for two weeks during each semester.)</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-65">
+							<div class="trad-number">65</div>
+							<div class="trad-descip">Forget your umbrella. Pick up <a href="http://columbiaspectator.com/orientation-2014">a copy of Spectator</a> to protect your books.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-66">
+							<div class="trad-number">66</div>
+							<div class="trad-descip">Call CAVA—<a href="http://columbiaspectator.com/news/2013/02/08/cu-ems-seeks-increase-accessibility">now CU-EMS</a>—for a friend. Resolve to never be CAVA’d.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-67">
+							<div class="trad-number">67</div>
+							<div class="trad-descip">Discover previously unidentified substances in the McBain/Carman elevators (see 66).
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-68">
+							<div class="trad-number">68</div>
+							<div class="trad-descip">Take part in <a href="http://columbiaspectator.com/2013/03/04/cu-assassins-kicks-now-open-barnard-students">CU Assassins</a>. Develop intense paranoia.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-69">
+							<div class="trad-number">69</div>
+							<div class="trad-descip">Make a spare key with an old credit card and an X-Acto knife (VingCard dorms only).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-70">
+							<div class="trad-number">70</div>
+							<div class="trad-descip">Check out the view of campus from Butler’s roof, preferably at night and preferably sober.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-71">
+							<div class="trad-number">71</div>
+							<div class="trad-descip">Jump in the fountains in front of Low Library.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-72">
+							<div class="trad-number">72</div>
+							<div class="trad-descip">Start using Flex because it feels like free money. Feel the wrath of your parents when it shows up on your tuition bill.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-73">
+							<div class="trad-number">73</div>
+							<div class="trad-descip">Get into <a href="http://artsinitiative.columbia.edu/city/museums/map">museums for free using your CUID</a>. Hate paying for the Frick and Guggenheim.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-74">
+							<div class="trad-number">74</div>
+							<div class="trad-descip">Listen to your out-of-town friends call the 1 the “red line.” Laugh at their ignorance.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-75">
+							<div class="trad-number">75</div>
+							<div class="trad-descip">Go for a run in Riverside Park. Post about it on Instagram so people have proof it actually happened.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-76">
+							<div class="trad-number">76</div>
+							<div class="trad-descip">Learn that Williamsburg isn’t <a href="http://columbiaspectator.com/2013/09/27/atlantic-avenue-0">the only place in Brooklyn worth visiting</a>.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-77">
+							<div class="trad-number">77</div>
+							<div class="trad-descip">Eagerly await the announcement of the <a href="http://columbiaspectator.com/tags/bacchanal">Bacchanal</a> headliners. Then complain that they suck.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-78">
+							<div class="trad-number">78</div>
+							<div class="trad-descip">Walk all the way up Lerner using the ramps until you discover the staircases in the back. Pretend they’re secret passageways when you use them.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-79">
+							<div class="trad-number">79</div>
+							<div class="trad-descip">Hear <a href="http://columbiaspectator.com/tags/jeffrey-sachs">Jeffrey Sachs</a> speak. Experience liberal guilt.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-80">
+							<div class="trad-number">80</div>
+							<div class="trad-descip">Sample the various local supermarkets. Pledge your heart (and wallet) to Westside.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-81">
+							<div class="trad-number">81</div>
+							<div class="trad-descip">Pass a course without ever scoring above 60 on a test (SEAS only).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-82">
+							<div class="trad-number">82</div>
+							<div class="trad-descip">Drag yourself out of bed at 4 a.m. for a fire alarm—three times in one week.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-83">
+							<div class="trad-number">83</div>
+							<div class="trad-descip">Walk from Battery Park to campus or vice versa.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-84">
+							<div class="trad-number">84</div>
+							<div class="trad-descip">Join a campus tour and ask the tour guide awkward questions.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-85">
+							<div class="trad-number">85</div>
+							<div class="trad-descip">Be first in line to get a warm bagel from Absolute Bagels when it opens.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-86">
+							<div class="trad-number">86</div>
+							<div class="trad-descip">Get a coffee from Joe or Oren’s. Never go to Starbucks again.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-87">
+							<div class="trad-number">87</div>
+							<div class="trad-descip">Spend a month never going south of West 107th Street (Absolute) or north of West 120th Street (Joe).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-88">
+							<div class="trad-number">88</div>
+							<div class="trad-descip">Take Principles of Economics with <a href="http://columbiaspectator.com/tag/sunil-gulati">Sunil Gulati</a>. Become an econ major.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-89">
+							<div class="trad-number">89</div>
+							<div class="trad-descip">Discover econ majors have to take econometrics. Become an English major.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-90">
+							<div class="trad-number">90</div>
+							<div class="trad-descip">Try to go to a party in EC. Spend your whole night <a href="http://columbiaspectator.com/2013/09/27/after-policy-change-more-students-must-be-signed">waiting to get signed in</a> (BC/GS only).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-91">
+							<div class="trad-number">91</div>
+							<div class="trad-descip">Log into LionSHARE and realize that 90 percent of the internships are in consulting.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-92">
+							<div class="trad-number">92</div>
+							<div class="trad-descip">Get an “I Love BC” T-shirt on Barnard Spirit Day.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-93">
+							<div class="trad-number">93</div>
+							<div class="trad-descip">Only attend <a href="http://columbiaspectator.com/tags/homecoming">Homecoming</a> senior year for the free beer.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-94">
+							<div class="trad-number">94</div>
+							<div class="trad-descip">Seriously consider <a href="http://www.wikicu.com/Dropouts">dropping out</a>. <a href="http://columbiaspectator.com/2013/10/18/kill-your-darlings-rediscovering-columbias-bohemians">All the cool Columbians have</a>.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-95">
+							<div class="trad-number">95</div>
+							<div class="trad-descip">Pledge to cook more. Fail. Get Seamless.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-96">
+							<div class="trad-number">96</div>
+							<div class="trad-descip">Attend a ceremonial religious meal, but not for your religion.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-97">
+							<div class="trad-number">97</div>
+							<div class="trad-descip">Hook up with someone. Awkwardly bump into said hookup everywhere.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-98">
+							<div class="trad-number">98</div>
+							<div class="trad-descip">Find the owl and then sit on Alma Mater. </div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-99">
+							<div class="trad-number">99</div>
+							<div class="trad-descip">Plan out the answers to the questions in your <a href="http://bwog.com/tag/senior-wisdom/">Senior Wisdom for Bwog</a>. Now, if only you had one...</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-100">
+							<div class="trad-number">100</div>
+							<div class="trad-descip">Go to the <a href="http://columbiaspectator.com/tags/tree-lighting-ceremony">tree lighting and Yule Log ceremonies</a>. Discard your jadedness for several hours.
+							</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-101">
+							<div class="trad-number">101</div>
+							<div class="trad-descip">Attend a WBAR-B-Q. Pretend you’ve heard of the bands to impress the bespectacled, beanie-clad WBAR staff.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-102">
+							<div class="trad-number">102</div>
+							<div class="trad-descip">Attend Senior Night more times before senior year than during your senior year.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-103">
+							<div class="trad-number">103</div>
+							<div class="trad-descip">Run into a TA at 1020. Awkwardly talk about your time in his section.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-104">
+							<div class="trad-number">104</div>
+							<div class="trad-descip">Spend one summer living and working in the city. Appreciate how good New York smells the rest of the year.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-105">
+							<div class="trad-number">105</div>
+							<div class="trad-descip">Make friends with a General Studies student who is 10 years older than you (CC/SEAS/BC only). Be the General Studies student who is 10 years older than everyone around you (GS only).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-106">
+							<div class="trad-number">106</div>
+							<div class="trad-descip">Lose friends in <a href="http://columbiaspectator.com/2014/03/27/you-know-your-lottery-number%E2%80%94here-are-our-predictions">senior regroup</a>.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-107">
+							<div class="trad-number">107</div>
+							<div class="trad-descip">Walk across the Brooklyn Bridge at night. Eat at Grimaldi’s.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-108">
+							<div class="trad-number">108</div>
+							<div class="trad-descip">See your name appear in a campus publication. (Bonus points if it’s <a href="http://columbiaspectator.com/opinion/op-eds">an op-ed in Spec</a>.)</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-109">
+							<div class="trad-number">109</div>
+							<div class="trad-descip">Realize the value of research librarians.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-110">
+							<div class="trad-number">110</div>
+							<div class="trad-descip">Check out Citi Field, Yankee Stadium, and Barclays Center.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-111">
+							<div class="trad-number">111</div>
+							<div class="trad-descip">Work an off-campus internship. Either love or hate the commute. </div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-112">
+							<div class="trad-number">112</div>
+							<div class="trad-descip">Put off the swim test until the second semester of your senior year. Consider inventing a water phobia to get out of it (CC only).</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-113">
+							<div class="trad-number">113</div>
+							<div class="trad-descip">Hook up in the Butler stacks.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-114">
+							<div class="trad-number">114</div>
+							<div class="trad-descip">Remember that thesis you were supposed to write. Leave the stacks to get actual work done.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-115">
+							<div class="trad-number">115</div>
+							<div class="trad-descip">Get into <a href="http://columbiaspectator.com/news/2014/03/07/planned-parenthood-president-will-speak-barnard-commencement">arguments about how terrible your commencement speaker is</a> with friends. Realize it doesn’t matter. Instead, focus on the remaining time you have left with those friends.</div>
+						</div>
+						<div class="tradition" onclick="clickTradition(this);" id="no-116">
+							<div class="trad-number">116</div>
+							<div class="trad-descip"><a href="http://columbiaspectator.com/2014/05/19/commencement-2014">Graduate!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-8">
+				<div id="subcategory-img"></div>
+
+				<h1> You have completed <div id="tradition-count">0</div> <div id="tradition-plural" style="display:inline;">traditions</div> so far! </h1>
+
+
+			</div>
 		</div>
 	</div> 
 </div> 
+
+<!-- ########################################### SLIDE 6 ##########################################################  -->
 
 
 <div id="slide6">
@@ -309,6 +816,9 @@ $(document).ready(function() {
 		</div>
 	</div> 
 </div> 
+
+<!-- ########################################### SLIDE 7 ##########################################################  -->
+
 
 <div id="slide7">
 	<div class="slide-title">Student Groups</div>
@@ -413,19 +923,20 @@ $(document).ready(function() {
 
 <!-- ########################################### MODALS ##########################################################  -->
 
+
 <!-- CLASS RECOMMENDATION MODALS: --> 
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header dotted-bottom" style="color:black;">
-          	<button type="button" class="close" data-dismiss="modal">&times;</button>
-          	<h1 style="color:black; line-height:10px;">CLASS NAME</h1>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+	  <!-- Modal content-->
+	  <div class="modal-content">
+	    <div class="modal-header dotted-bottom" style="color:black;">
+	      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      	<h1 style="color:black; line-height:10px;">CLASS NAME</h1>
 			<h2 style="color:black; line-height:8px;">PROFESSOR NAME</h2>
 		</div>
-        <div class="modal-body row">
+	    <div class="modal-body row">
 		  <div class="col-xs-4">
 	      	<img src="https://pbs.twimg.com/profile_images/378800000562224505/a2a2b04f6fe04564167b15e18b0d034f.jpeg" width="100%">
 	      	<div class="modal-h1"> Rachit Mohan <br> Head of Product </div>
@@ -438,37 +949,37 @@ $(document).ready(function() {
 			<br>
 			Aliquam convallis nunc non luctus suscipit. Nunc vel condimentum nulla, tincidunt aliquam diam. Curabitur nisl ipsum, pharetra id lorem volutpat, posuere porta ex. Pellentesque gravida odio eu velit volutpat, nec semper est euismod. Duis eget nisl augue. Donec et sollicitudin ex, vel dignissim tellus. Curabitur molestie bibendum quam ut convallis. Sed dolor nunc, malesuada a metus ac, elementum varius ipsum. Fusce ullamcorper risus elit, non tristique sem pretium et. Aliquam egestas convallis pharetra. Aliquam erat volutpat. </h3>
 		  </div>
-        </div>
-        <div class="modal-footer dotted-top">
-        	<div class="modal-h1">What Past Students Think:</div>
-        	<div class="modal-h2">Data from Courses@CU Quick Reviews</div>
-        	<div class="row">
-        		<div class="col-xs-4">
-        			<div class="modal-percent">
+	    </div>
+	    <div class="modal-footer dotted-top">
+	    	<div class="modal-h1">What Past Students Think:</div>
+	    	<div class="modal-h2">Data from Courses@CU Quick Reviews</div>
+	    	<div class="row">
+	    		<div class="col-xs-4">
+	    			<div class="modal-percent">
 	        			89%
 	        		</div>
 					<div class="modal-h2">Recommend the Class</div>
-        		</div>
-        		<div class="col-xs-4">
-        			<div class="modal-percent">
+	    		</div>
+	    		<div class="col-xs-4">
+	    			<div class="modal-percent">
 	        			100%
 	        		</div>
 					<div class="modal-h2">Professor Approval</div>
-        		</div>
-        		<div class="col-xs-4">
-        			<div class="modal-percent">
+	    		</div>
+	    		<div class="col-xs-4">
+	    			<div class="modal-percent">
 	        			67%
 	        		</div>
 					<div class="modal-h2">Say Workload is Intense</div>
-        		</div>
-        	</div>
-        	<div class="modal-container">
-        		<a href="http://www.coursesatcu.com/" class="modal-h2">Click here to learn more at Courses@CU</a>
-        	</div>
-        </div>
-      </div>
-    </div>
-  </div>
+	    		</div>
+	    	</div>
+	    	<div class="modal-container">
+	    		<a href="http://www.coursesatcu.com/" class="modal-h2">Click here to learn more at Courses@CU</a>
+	    	</div>
+	    </div>
+	  </div>
+	</div>
+</div>
 
 </body>
 </html>

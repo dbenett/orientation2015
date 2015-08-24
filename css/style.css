@@ -456,6 +456,88 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background-size: cover;
 }
 
+#traditions-container {
+	height: 500px;
+	overflow:hidden;
+	overflow-y:scroll;
+	border: solid 1px white;
+	border-radius: 20px;
+	padding: 10px 10px;
+
+}
+
+.tradition {
+	border: solid 1px;
+	border-color: transparent;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 5px 0;
+	margin: 5px 0;
+}
+
+.tradition.completed {
+   	background: rgba(196, 216, 226, 0.5); 
+   	border-color: white;
+   	border-radius: 20px;
+}
+
+.tradition:hover {
+	cursor: pointer;
+}
+
+.trad-number {
+	display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    background-color: #C4D8E2;
+    width: 50px;
+    height: 50px;
+    text-align:center;
+    line-height:45px;
+    border-radius: 50%;
+    font-size: 36px;
+    display: inline-block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin-bottom: 15px;
+}
+
+.completed > .trad-number{
+	background: url('../img/checkmark_circle.svg');
+	color: green;
+}
+
+.trad-descip {
+	font-family:"Vollkorn";
+   	font-size: 16px;
+   	text-align: left;
+   	font-weight: 500;
+   	color: white;
+	line-height: 18px;
+	display: inline-block;
+	width: 75%;
+	margin-top: -5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;
+}
+
+.trad-descip a{
+	color:#C4D8E2;
+}
+
+.trad-descip a:hover{
+	color:#C4D8E2;
+}
+
+#tradition-count {
+	margin: 15px 0;
+	font-size: 62px;
+	color: #C4D8E2;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 /* SIXTH SLIDE STYLING */
 #slide6 {
 	background-color: #fff;

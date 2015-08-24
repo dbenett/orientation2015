@@ -9,3 +9,24 @@ function toMorningsideMap(button) {
 	$('#morningside-button').addClass('active');
 	$('#manhattan-button').removeClass('active');
 }
+
+var traditionCount=0;
+
+function clickTradition(sender) {
+	var clicked = jQuery(sender);
+	if ($(clicked).hasClass('completed')) {
+		traditionCount --;
+		$(clicked).removeClass('completed');
+	}
+	else {
+		traditionCount++;
+		$(clicked).addClass('completed');
+	}
+	$('#tradition-count').text(traditionCount.toString());
+	if(traditionCount === 1) {
+		$('#tradition-plural').text('tradition');
+	}
+	else {
+		$('#tradition-plural').text('traditions');		
+	}
+}
