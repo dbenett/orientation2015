@@ -1,3 +1,5 @@
+
+
 function toManhattanMap(button) {
 	$('#food-map').css('background', 'url("http://static.thousandwonders.net/Manhattan.640.12979.jpg") 50% 0');
 	$('#morningside-button').removeClass('active');

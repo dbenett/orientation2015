@@ -5,14 +5,11 @@
     <title>Orientation 2015</title>
     <link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/responsiveslides.css"/>
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/orientation.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+  	<script src="js/responsiveslides.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
 	<script>
    
@@ -43,6 +40,20 @@
 
 	</script>
 
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+      });
+    });
+  </script>
+
 
 </head> 
 	
@@ -72,8 +83,8 @@
 <!-- ########################################### SLIDE 1 ##########################################################  -->  
 
 <div id="slide1">
+	<div id="plain-image"><img src="http://columbiaspectator.com/pb/resources/img/spectator-logo.png" width="50%"/></div> 
 	<div class="space-for-ad">
-		<div id="plain-image"></div> 
 		<div id="welcome-message">
 			<div id="welcome-title">Welcome to Columbia University from Spectator!</div>
 			<br>Ahae orsuam publi in a rem Romnovit. Etratius, firis prid sulto intestia clego et virtem, vivistrips, ut in Itamquam horbis es contiere, sid rei pulico trei senit vo, ca; hi, mur ut vehemus, vite, Catumei consus C. Quam orei con detis vivesilium nortam mei inum unultortam pata patuium sulvidite nonit igit. Sa rei poeriberum et facierte ium notervit nu simunu verenih icionum unum stratam Romnonsil capereci con ve, omnest es nostin alin deperfecre que apere- bus nonsule rvideatque intilistra tamquem, Cuppliam es bon temus audesic ibeferium acerit, num essentiam rei publibuline catim vivirmili, Ti. Asteret vemo considi endite abus comnissedet; nonstat re essenatis, nonum untemus publi sultus bon hacchus; niureconsum revid de acipicus, acitus enerim et facit, que nim plicae cerimunum audem- nostam tua L. Sus, quo porbi init. <br> Am. Fuius At actus iam prae, tea st pribus horte num nonfente cotiurbit; nem sulibute fue nium sus consusul hoc factala bultod is, efex nostaticiam, cut L. Scit? O te fure num mo iacivasta, nos conere, condam feci sicum nostem, que ceret ipientrem eniciaed inatien interei pro consulicae aut Catia? Otemuli forit? Nihilin vid cupion vidi tatis facchuitum nocum in iusquon ditia? Ne ne rem in prehem publicaed intissua reo iam sentem ducturestiam vilicat uidefac rentius abultus es hora inamdit. Tore, faut inum tam in iam re niur, quam inum tam noc issolto eruro, nu- mus; hussesi praedemquius faciam pribusperei culi, consus crebussa it intela nihilia cupiem fit, vit vium, coenihiliis. Num ce quastrae convehem essulles in apecupi octemur artiam iam isque nostam publius consulem nis redo, di- entif ecertiliis imuri sin spic forudes addum culicia mporei sendesu larteba tastrac medicaetis; C. M. Scia coernim ovilibunimo mover adetrum dem sediis, sedelica; ius vendin tebatic ibemnost viverid emnonsultum traestr ebatquo mercere nsulicipses prature natiam ora intelibus
@@ -792,9 +803,32 @@
 				</div>
 			</div>
 			<div class="col-xs-8">
-				<div id="subcategory-img"></div>
+			    <!-- Slideshow 4 -->
+				  <div id="wrapper">
 
-				<h1> You have completed <div id="tradition-count">0</div> <div id="tradition-plural" style="display:inline;">traditions</div> so far! </h1>
+				    <div class="slideshow-wrapper">
+				      <!-- Slideshow 4 -->
+				      <div class="callbacks_container">
+				        <ul class="rslides" id="slider4">
+				          <li>
+				            <img src="http://d3819ii77zvwic.cloudfront.net/wp-content/uploads/2015/06/roo-w800-h400.jpg" alt="">
+				            <p class="caption">This is a caption</p>
+				          </li>
+				          <li>
+				            <img src="https://lh6.googleusercontent.com/-DHYgZFK_-jQ/URPtTNBShII/AAAAAAAAHUo/Ap1r-8OIv24/w800-h800/photo.jpg" alt="">
+				            <p class="caption">This is another caption that is much longer and tests what happens when there is a much longer caption to make sure it does not break the formatting of the page.</p>
+				          </li>
+				          <li>
+				            <img src="http://www.beyond.fr/picsvill2/steagnes0065b.jpg" alt="">
+				            <p class="caption">The third caption</p>
+				          </li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div style="padding-top: 50px; display:block; white-space: nowrap; text-align: center;">
+					<h1> You have completed <div id="tradition-count">0</div> <div id="tradition-plural" style="display:inline;">traditions</div> so far! </h1>
+				  </div>
 
 
 			</div>

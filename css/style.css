@@ -204,339 +204,451 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background-color: rgba(100,100,255,.75);
 }
 
+/* SLIDESHOW STYLING */
+
+	.slideshow-wrapper {
+	  width: 600px;
+	  height: 300px;
+	  color: #888;
+	  font: 14px/20px Helvetica, Arial, sans-serif;
+	  margin: 20px auto 0;
+	  max-width: 800px;
+	  text-align: center;
+	  text-shadow: 0 -2px 1px #000;
+	}
+
+	#wrapper {
+	  padding: 20px;
+	  }
+
+	.rslides {
+	  margin: 0 auto 40px;
+	  }
+
+
+	/* Callback example */
+
+	.events {
+	  list-style: none;
+	  }
+
+	.callbacks_container {
+	  margin-bottom: 50px;
+	  position: relative;
+	  float: left;
+	  width: 100%;
+	  }
+
+	.callbacks {
+	  position: relative;
+	  list-style: none;
+	  overflow: hidden;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+	  }
+
+	.callbacks li {
+	  position: absolute;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	  }
+
+	.callbacks img {
+	  display: block;
+	  position: relative;
+	  z-index: 1;
+	  height: auto;
+	  width: 100%;
+	  border: 0;
+	  }
+
+	.caption-container {
+	  	overflow: visible;
+	  }
+
+	.callbacks .caption {
+		  display: block;
+		  position: absolute;
+		  z-index: 2;
+		  font-size: 20px;
+		  text-shadow: none;
+		  color: #fff;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  padding: 10px 20px;
+		  margin: 0;
+		  max-width: none;
+	  }
+
+	.callbacks_nav {
+		  z-index: 3;
+		  position: absolute;
+		  -webkit-tap-highlight-color: rgba(0,0,0,0);
+		  opacity: 0.6;
+		  text-indent: -9999px;
+		  overflow: hidden;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  background: #000 url("../img/themes.gif") no-repeat left 50%;
+		  width: 38px;
+	  }
+
+	.callbacks_nav:active {
+	  opacity: 1.0;
+	  }
+
+	.callbacks_nav.next {
+	  left: auto;
+	  background-position: right 50%;
+	  right: 0;
+	  }
+
+	@media screen and (max-width: 600px) {
+	  .callbacks_nav {
+	    top: 47%;
+	    }
+	  }
+
+
 /* FIRST SLIDE STYLING (PLAIN IMAGE/WELCOME MESSAGE)*/
 
-#slide1{
-	background:url('https://upload.wikimedia.org/wikipedia/commons/5/54/Outside_Columbia_University_Library_(5892425145).jpg') 50% 0 no-repeat fixed;
-	color: #fff;
-	margin: 0;
-	padding: 200px 0 260px 0;
-	background-size: cover;
-	width: 100%;
-}
+	#slide1{
+		background:url('https://upload.wikimedia.org/wikipedia/commons/5/54/Outside_Columbia_University_Library_(5892425145).jpg') 50% 0 no-repeat fixed;
+		color: #fff;
+		margin: 0;
+		padding: 200px 0 260px 0;
+		background-size: cover;
+		width: 100%;
+	}
 
-#plain-image{
-	width: 100%;
-	height: 600px;
-}
+	#plain-image{
+		margin-top: -50px;
+		text-align: center;
+		height: 800px;
+	}
 
-#welcome-title {
-	font-size: 36px;
-	text-align: center;
-	font-weight: bold;
-}
+	#welcome-title {
+		font-size: 36px;
+		text-align: center;
+		font-weight: bold;
+	}
 
-#welcome-message{
-	width: 80%;
-	margin: 0 auto;
-	padding: 30px 40px;
-   	background: rgb(200, 200, 200); /* The Fallback */
-	background: rgba(200, 200, 200, .6);
-    border-radius: 50px;
-    font-size: 18px;
-	color: white; 
-}
+	#welcome-message{
+		width: 80%;
+		margin: 0 auto;
+		padding: 30px 40px;
+	   	background: rgb(200, 200, 200); /* The Fallback */
+		background: rgba(200, 200, 200, .6);
+	    border-radius: 50px;
+	    font-size: 18px;
+		color: white; 
+	}
 
 /* SECOND SLIDE STYLING */
-#slide2{
-	width: 100%;
-	background-color: #fff;
-	color: #333333;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 80px 0 80px 0;
-}
+	#slide2{
+		width: 100%;
+		background-color: #fff;
+		color: #333333;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 80px 0 80px 0;
+	}
 
-.course-box {
-	border: solid 1px;
-	overflow: visible;
-	height: 150px;
-	width: 100%;
-	margin: 20px 0px 0px 20px;
-	outline: 0;
-	background: none;
-	padding: 0px 0px 0px 0px;
-}
+	.course-box {
+		border: solid 1px;
+		overflow: visible;
+		height: 150px;
+		width: 100%;
+		margin: 20px 0px 0px 20px;
+		outline: 0;
+		background: none;
+		padding: 0px 0px 0px 0px;
+	}
 
-.course-box > img {
-	width: 40%;
-	height: 100%;
-}
+	.course-box > img {
+		width: 40%;
+		height: 100%;
+	}
 
-.course-box-text{
-	width: 60%;
-	height: 30%;
-	float: right;
-}
+	.course-box-text{
+		width: 60%;
+		height: 30%;
+		float: right;
+	}
 
-.course-box-text > h1 {
-	line-height: 22px;
-	color: black;
-	font-size: 22px;
-}
+	.course-box-text > h1 {
+		line-height: 22px;
+		color: black;
+		font-size: 22px;
+	}
 
-.course-box-text > h2 {
-	line-height: 20px;
-	color: black;
-	font-size: 16px;
-}
+	.course-box-text > h2 {
+		line-height: 20px;
+		color: black;
+		font-size: 16px;
+	}
 
-#slide2 li {
-	line-height: 18px;
-	color: black;
-	font-size: 16px;
-   	font-family:"Vollkorn";
-   	font-weight: 500;
-}
+	#slide2 li {
+		line-height: 18px;
+		color: black;
+		font-size: 16px;
+	   	font-family:"Vollkorn";
+	   	font-weight: 500;
+	}
 
 /* THIRD SLIDE STYLING */
 
-#food-container{
-	margin: 25px auto;
-	width: 75%;
-}
+	#food-container{
+		margin: 25px auto;
+		width: 75%;
+	}
 
-#food-map {
-	background: url('../img/morningside_heights.jpg') 50% 0;
-  	background-size: 100% 100%;
-	width: 100%;
-	height: 325px;
-}
+	#food-map {
+		background: url('../img/morningside_heights.jpg') 50% 0;
+	  	background-size: 100% 100%;
+		width: 100%;
+		height: 325px;
+	}
 
-#restaurant-description {
-	width: 100%;
-	height: 150px;
-	margin-top: 20px;
-	background: rgb(200,200,200);
-	background: rgba(200,200,200,.7);
-}
+	#restaurant-description {
+		width: 100%;
+		height: 200px;
+		margin-top: 20px;
+		background: rgb(200,200,200);
+		background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0)),
+	}
 
-.eat-cheap-blurb {
-	padding-bottom: 10px;
-}
+	.eat-cheap-blurb {
+		padding-bottom: 10px;
+	}
 
-.eat-cheap-blurb h1 {
-	font-size: 20px;
-	line-height: 10px;
-}
+	.eat-cheap-blurb h1 {
+		font-size: 20px;
+		line-height: 10px;
+	}
 
-.eat-cheap-blurb h2 {
-	font-size: 16px;
-	text-align: left;
-}
+	.eat-cheap-blurb h2 {
+		font-size: 16px;
+		text-align: left;
+	}
 
-#slide3{
-	background-color: black; /* fallback */
-   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-   				url('http://videoandfilmmaker.com/wp/wp-content/uploads/2014/04/IMG_1534.jpg') 50% 0 no-repeat fixed;
-	color: #fff;
-	padding: 80px 0 80px 0;
-	background-size: cover;
-	overflow: hidden;
-}
+	#slide3{
+		background-color: black; /* fallback */
+	   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	   				url('http://videoandfilmmaker.com/wp/wp-content/uploads/2014/04/IMG_1534.jpg') 50% 0 no-repeat fixed;
+		color: #fff;
+		padding: 80px 0 80px 0;
+		background-size: cover;
+		overflow: hidden;
+	}
 
-#slide3 h1, #slide3 h2 {
-	color: white;
-}
+	#slide3 h1, #slide3 h2 {
+		color: white;
+	}
 
 /* FOURTH SLIDE STYLING */
 
-#slide4 {
-	background-color: #fff;
-	color: black;
-	padding: 80px 0 80px 0;
-}
+	#slide4 {
+		background-color: #fff;
+		color: black;
+		padding: 80px 0 80px 0;
+	}
 
-#slide4 h1, #slide4 h2 {
-	color: black;
-}
+	#slide4 h1, #slide4 h2 {
+		color: black;
+	}
 
-#subway-line {
-	width: 880px;
-	height: 30px;
-	margin: 100px auto 10px auto;
-	padding: 0 0;
-	border-radius: 20px;
-	background-color: black;
-	position: relative;
-}
+	#subway-line {
+		width: 880px;
+		height: 30px;
+		margin: 100px auto 10px auto;
+		padding: 0 0;
+		border-radius: 20px;
+		background-color: black;
+		position: relative;
+	}
 
-#subway-stops-container {
-	position: absolute;
-	left: 5px;
-	right: 5px;
-	top: 5px;
-	bottom: 8px;
-    white-space: nowrap;
-}
-
-.subway-stop {
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	color: white;
-	margin-right: 70px;
-	background-color:white;
-	border: 0;
-	cursor:pointer;
-	outline: 0;
-	position: relative;
-}
-
-.subway-stop:hover {
-	background-color: red;
-}
-
-#train-name {
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
-    color: white;
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    text-align:center;
-    line-height:45px;
-    border-radius: 50%;
-    font-size: 36px;
-    display: inline-block;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	margin-bottom: 15px;
-}
-
-/*fix for firefox's different absolute positioning*/
-@-moz-document url-prefix() { 
 	#subway-stops-container {
 		position: absolute;
 		left: 5px;
 		right: 5px;
-		top: 0px;
-		bottom: 10px;
+		top: 5px;
+		bottom: 8px;
+	    white-space: nowrap;
 	}
-}
 
-#subway-stop-map {
-	width: 100%;
-	margin-left: 20px;
-	height: 500px;
-	background: url('../img/morningside_heights.jpg') 50% 0;
-  	background-size: 100% 100%;
-}
+	.subway-stop {
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		color: white;
+		margin-right: 70px;
+		background-color:white;
+		border: 0;
+		cursor:pointer;
+		outline: 0;
+		position: relative;
+	}
 
-.subway-label{
-	color:black;
-    position: absolute;
-    -ms-transform: rotate(-55deg); /* IE 9 */
-    -webkit-transform: rotate(-55deg); /* Chrome, Safari, Opera */
-    transform: rotate(-55deg);
-    /* same as margin btw stop circles */
-    margin-right: 70px;
-    bottom: 320%;
-    left: 0px;
-    white-space: nowrap;
-    font-size: 18px;
-}
+	.subway-stop:hover {
+		background-color: red;
+	}
 
-#subway-area-site {
-	width: 90%;
-	height: 540px;
-	margin: 20px 0px 10px 20px;
-	background: rgb(200,200,200);
-}
+	#train-name {
+	    border-style: solid;
+	    border-width: 1px;
+	    border-color: red;
+	    color: white;
+	    background-color: red;
+	    width: 50px;
+	    height: 50px;
+	    text-align:center;
+	    line-height:45px;
+	    border-radius: 50%;
+	    font-size: 36px;
+	    display: inline-block;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		margin-bottom: 15px;
+	}
+
+	/*fix for firefox's different absolute positioning*/
+	@-moz-document url-prefix() { 
+		#subway-stops-container {
+			position: absolute;
+			left: 5px;
+			right: 5px;
+			top: 0px;
+			bottom: 10px;
+		}
+	}
+
+	#subway-stop-map {
+		width: 100%;
+		margin-left: 20px;
+		height: 500px;
+		background: url('../img/morningside_heights.jpg') 50% 0;
+	  	background-size: 100% 100%;
+	}
+
+	.subway-label{
+		color:black;
+	    position: absolute;
+	    -ms-transform: rotate(-55deg); /* IE 9 */
+	    -webkit-transform: rotate(-55deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-55deg);
+	    /* same as margin btw stop circles */
+	    margin-right: 70px;
+	    bottom: 320%;
+	    left: 0px;
+	    white-space: nowrap;
+	    font-size: 18px;
+	}
+
+	#subway-area-site {
+		width: 90%;
+		height: 540px;
+		margin: 20px 0px 10px 20px;
+		background: rgb(200,200,200);
+	}
 
 /* FIFTH SLIDE STYLING */
 
-#slide5{
-   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-   				url('http://features.columbiaspectator.com/news/wp-content/uploads/sites/3/2015/02/TA_Youjin-Jenny-Jang_Low-and-Alma.jpg') 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 80px 0 80px 0;
-	color: #fff;
-	height: 800px;
-	background-size: cover;
-}
+	#slide5{
+	   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	   				url('http://features.columbiaspectator.com/news/wp-content/uploads/sites/3/2015/02/TA_Youjin-Jenny-Jang_Low-and-Alma.jpg') 50% 0 no-repeat fixed;
+		margin: 0 auto;
+		padding: 80px 0 80px 0;
+		color: #fff;
+		height: 800px;
+		background-size: cover;
+	}
 
-#traditions-container {
-	height: 500px;
-	overflow:hidden;
-	overflow-y:scroll;
-	border: solid 1px white;
-	border-radius: 20px;
-	padding: 10px 10px;
+	#traditions-container {
+		height: 500px;
+		overflow:hidden;
+		overflow-y:scroll;
+		border: solid 1px white;
+		border-radius: 20px;
+		padding: 10px 10px;
 
-}
+	}
 
-.tradition {
-	border: solid 1px;
-	border-color: transparent;
-	position: relative;
-	width: 100%;
-	height: auto;
-	padding: 5px 0;
-	margin: 5px 0;
-}
+	.tradition {
+		border: solid 1px;
+		border-color: transparent;
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 5px 0;
+		margin: 5px 0;
+	}
 
-.tradition.completed {
-   	background: rgba(196, 216, 226, 0.5); 
-   	border-color: white;
-   	border-radius: 20px;
-}
+	.tradition.completed {
+	   	/*background: rgba(196, 216, 226, 0.5); */
+	   	background: rgba(0, 216, 20, 0.5);
+	   	border-color: white;
+	   	border-radius: 20px;
+	}
 
-.tradition:hover {
-	cursor: pointer;
-}
+	.tradition:hover {
+		cursor: pointer;
+	}
 
-.trad-number {
-	display: inline-block;
-    border-style: solid;
-    border-width: 1px;
-    color: white;
-    background-color: #C4D8E2;
-    width: 50px;
-    height: 50px;
-    text-align:center;
-    line-height:45px;
-    border-radius: 50%;
-    font-size: 36px;
-    display: inline-block;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	margin-bottom: 15px;
-}
+	.trad-number {
+		display: inline-block;
+	    border-style: solid;
+	    border-width: 1px;
+	    color: white;
+	    background-color: #C4D8E2;
+	    width: 50px;
+	    height: 50px;
+	    text-align:center;
+	    line-height:45px;
+	    border-radius: 50%;
+	    font-size: 36px;
+	    display: inline-block;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		margin-bottom: 15px;
+	}
 
-.completed > .trad-number{
-	background: url('../img/checkmark_circle.svg');
-	color: green;
-}
+	/*.completed > .trad-number{
+		color: white;
+		background-color: green
+	}*/
 
-.trad-descip {
-	font-family:"Vollkorn";
-   	font-size: 16px;
-   	text-align: left;
-   	font-weight: 500;
-   	color: white;
-	line-height: 18px;
-	display: inline-block;
-	width: 75%;
-	margin-top: -5px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	vertical-align: middle;
-}
+	.trad-descip {
+		font-family:"Vollkorn";
+	   	font-size: 16px;
+	   	text-align: left;
+	   	font-weight: 500;
+	   	color: white;
+		line-height: 18px;
+		display: inline-block;
+		width: 75%;
+		margin-top: -5px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		vertical-align: middle;
+	}
 
-.trad-descip a{
-	color:#C4D8E2;
-}
+	.trad-descip a{
+		color:#C4D8E2;
+	}
 
-.trad-descip a:hover{
-	color:#C4D8E2;
-}
+	.trad-descip a:hover{
+		color:#C4D8E2;
+	}
 
-#tradition-count {
-	margin: 15px 0;
-	font-size: 62px;
-	color: #C4D8E2;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+	#tradition-count {
+		margin: 15px 0;
+		font-size: 62px;
+		color: #C4D8E2;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
 
 /* SIXTH SLIDE STYLING */
 #slide6 {
