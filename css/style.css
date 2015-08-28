@@ -175,15 +175,6 @@ h3 {
 		position: relative;
 	}
 
-	.vertical-center-content {
-		position: absolute;
-		top: 0; left: 0; bottom: 0; right: 0;
-		margin: auto;
-		text-align:center;
-		width:100%;
-		display:table;
-	}
-
 	.orientation-button:hover {
 		background-color:transparent;
 		background-color: rgba(97, 137, 167, .95);
@@ -192,6 +183,15 @@ h3 {
 
 	.orientation-button.active {
 		background-color: rgba(47, 87, 117, .95);
+	}
+
+	.vertical-center-content {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		margin: auto;
+		text-align:center;
+		width:100%;
+		display:table;
 	}
 
 /* SLIDESHOW STYLING */
@@ -841,6 +841,104 @@ h3 {
 		font-size: 16px;
 		line-height: 19px;
 	}
+
+	/*FAMILY TREE styling (from http://thecodeplayer.com/walkthrough/css3-family-tree)*/
+		.tree * {
+			margin: 0; padding: 0;
+		}
+
+		.tree {
+			width:950px;
+		}
+		.tree ul {
+			padding-top: 20px;
+			position: relative;
+		}
+
+		.tree li {
+			float: left;
+			text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute;
+			top: 0; 
+			right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%;
+			height: 20px;
+		}
+		.tree li::after{
+			right: auto;
+			left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without 
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{
+			padding-top: 0;
+		}
+
+		/*Remove left connector from first child and 
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0;
+			height: 20px;
+		}
+
+		.tree li a{
+			border: 0;
+			padding: 5px 3px;
+			text-decoration: none;
+			background-color: rgb(127, 167, 197);
+			background-color: rgba(127, 167, 197, .95);
+			color: white;
+			font-family: "Lato", sans-serif;
+			font-size: 14px;
+			display: inline-block;
+			width: 100px;
+			cursor: pointer;
+		}
+
+		.hierarchy-position {
+			font-size: 12px;
+		}
+
+		/*Time for some hover effects*/
+		.tree li a:hover {
+			background-color:transparent;
+			background-color: rgba(97, 137, 167, .95);
+			outline: 0;
+		}
+
 
 /* MODAL STYLING  */
 
