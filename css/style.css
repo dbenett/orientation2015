@@ -361,7 +361,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	}
 	#welcome-text{
 		text-align: justify;
-	
+
 	}
 
 /* SECOND SLIDE STYLING */
@@ -423,6 +423,10 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
 	   	font-weight: 500;
 	}
 
+	.hidden{
+		visibility: none;
+	}
+
 /* THIRD SLIDE STYLING */
 	#slide3{
 		background-color: black; /* fallback */
@@ -475,6 +479,13 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
 		text-align: left;
 	}
 
+	.eat-rewards{
+		text-align: justify;
+	}
+
+	.eat-cheap{
+		text-align: justify;
+	}
 /* FOURTH SLIDE STYLING */
 
 	#slide4 {
@@ -686,6 +697,11 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
 
 #slide6 h1, #slide6 h2 {
 	color: black;
+}
+
+.resources-instructions{
+	margin-top: -1px;
+	margin-bottom: -1px;
 }
 
 /* SEVENTH SLIDE STYLING */

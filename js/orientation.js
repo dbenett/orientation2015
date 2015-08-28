@@ -1,19 +1,35 @@
 function toBarnardRegistrationVideo(button){
-	$("iframe").click(function(e) {
-    e.preventDefault();
-  $("#registration-video").attr("src", "https://www.youtube.com/watch?v=ej3ioOneTy8");
-    })
-	$('#columbia-button').removeClass('active');
-	$('#barnard-button').addClass('active');
+	
+	$('#columbia-video').addClass('hidden');
+	$('#quick-tips-video').addClass('hidden');
+	$('#barnard-video').removeClass('hidden');
+
+	$('#columbia-video').removeClass('active');
+	$('#quick-tips-video').removeClass('active');
+	$('#barnard-video').addClass('active');
 }
 
 function toColumbiaRegistrationVideo(button){
-	$("iframe").click(function(e) {
-    e.preventDefault();
-  $("#registration-video").attr("src", "https://www.youtube.com/embed/WSk7_I-WHV8");
-    })
+
+	$('#barnard-video').addClass('hidden');
+	$('#quick-tips-video').addClass('hidden');
+	$('#columbia-video').removeClass('hidden');
+
+	$('#barnard-video').removeClass('active');
+	$('#quick-tips-video').removeClass('active');
+	$('#columbia-video').addClass('active');
+}
+
+function toQuickTipsVideo(button){
+
+	$('#barnard-video').addClass('hidden');
+	$('#columbia-video').addClass('hidden');
+	$('#quick-tips-video').removeClass('hidden');
+
+
 	$('#barnard-button').removeClass('active');
-	$('#columbia-button').addClass('active');
+	$('#columbia-button').removeClass('active');
+	$('#quick-tips-button').addClass('active');
 }
 
 function toManhattanMap(button) {
