@@ -319,6 +319,61 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	  right: 0;
 	  }
 
+	.newsletter-signup{
+	border:0;
+	display:inline-block;
+	cursor:pointer;
+	background-color: rgb(127, 167, 197);
+	background-color: rgba(127, 167, 197, .95);
+	font-family:"Lato", sans-serif;
+	font-size:17px;
+	padding:12px 31px;
+	min-width: 175px;
+	text-decoration:none;
+	outline: 0;
+	margin-right: 6px;
+	float: none;
+    margin: 0 auto;
+  margin-top: 50px;
+	}
+
+	.newsletter-signup:hover {
+	background-color:transparent;
+	background-color: rgba(97, 137, 167, .95);
+	outline: 0;
+}
+
+.newsletter-signup.active {
+	background-color: rgba(47, 87, 117, .95);
+}
+	.get-started{
+	border:0;
+	display:inline-block;
+	cursor:pointer;
+	background-color: rgb(127, 167, 197);
+	background-color: rgba(127, 167, 197, .95);
+	font-family:"Lato", sans-serif;
+	font-size:17px;
+	padding:12px 31px;
+	min-width: 175px;
+	text-decoration:none;
+	outline: 0;
+	margin-right: 6px;
+	float: none;
+    margin: 0 auto;
+   margin-top: 50px;
+	}
+
+	.get-started:hover {
+	background-color:transparent;
+	background-color: rgba(97, 137, 167, .95);
+	outline: 0;
+}
+
+.get-started.active {
+	background-color: rgba(47, 87, 117, .95);
+}
+
 	@media screen and (max-width: 600px) {
 	  .callbacks_nav {
 	    top: 47%;
@@ -484,6 +539,10 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
 	}
 
 	.eat-cheap{
+		text-align: justify;
+	}
+
+	.mels-description{
 		text-align: justify;
 	}
 /* FOURTH SLIDE STYLING */
