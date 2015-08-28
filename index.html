@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/orientation.js"></script>
   	<script src="js/responsiveslides.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 	<script>
    
 	<!----- JQUERY FOR SLIDING NAVIGATION --->   
@@ -83,7 +83,7 @@
 <!-- ########################################### SLIDE 1 ##########################################################  -->  
 
 <div id="slide1">
-	<div id="plain-image"><img src="http://columbiaspectator.com/pb/resources/img/spectator-logo.png" width="50%"/></div> 
+	<div id="plain-image"><img src="img/masthead.png" alt="masthead" width="50%"/></div> 
 	<div class="space-for-ad">
 		<div id="welcome-message">
 			<div id="welcome-title">Welcome to Columbia University from Spectator!</div>
@@ -191,8 +191,8 @@
 					<h2></h2>
 					<h1> Registration tools: a guide </h1>
 					<div class="row">
-						<div class="col-xs-6" style="border-right:dotted 3px;">
-							<img src="http://www.coursesatcu.com/assets/Courses@CU%20logo-01b9a39de9d0f6a127935f61e6d44902.png" height="50px" width="auto" style="margin:0px auto 15px auto; display:block;">
+						<div class="col-xs-6" style="border-right:dotted 3px;"><a href="http://www.coursesatcu.com/">
+							<img src="http://www.coursesatcu.com/assets/Courses@CU%20logo-01b9a39de9d0f6a127935f61e6d44902.png" height="50px" width="auto" style="margin:0px auto 15px auto; display:block;"></a>
 							<ul>
 								<li>Temporep eribus. Asi reiurib eaquame poreperiae eum sint</li>
 								<li>Erum fuga. Nam fugitatium nihit, solupta turessit qui core- perchic totatat optur, vitat.</li>
@@ -201,7 +201,7 @@
 							</ul>
 						</div>
 						<div class="col-xs-6">
-							<img src="https://vergil.registrar.columbia.edu/img/vergil-logo-2x.png" height="50px" width="auto" style="margin:0px auto 15px auto; display:block; background-color: #789CC0;">
+							<a href="https://vergil.registrar.columbia.edu/"><img src="https://vergil.registrar.columbia.edu/img/vergil-logo-2x.png" height="50px" width="auto" style="padding-bottom: 7px; margin:0px auto 15px auto; display:block; background-color: #789CC0;"></a>
 							<ul style="padding-right:15px; margin-left:-15px;">
 								<li>Temporep eribus. Asi reiurib eaquame poreperiae eum sint</li>
 								<li>Erum fuga. Nam fugitatium nihit, solupta turessit qui core- perchic totatat optur, vitat.</li>
@@ -226,21 +226,27 @@
 	<div class="space-for-ad">
 		<div class="fluid-container">
 			<div class="row">
-				<div class="col-xs-8">
+				<div class="col-xs-4">
+					<div id="food-map"></div>
+				</div>
+				<div class="col-xs-4">
 					<h1> Select a map, then click on a dot to learn more </h1>
 					<div style="text-align: center;">
 						<button id="morningside-button" class="orientation-button active" onClick="toMorningsideMap(this)">Morningside</button>
 						<button id="manhattan-button" class="orientation-button" onClick="toManhattanMap(this)">Manhattan</button>
 					</div>
-					<div id="food-container">
-						<div id="food-map"></div>
-						<div id="restaurant-description">
-						</div>
+
+					<div id="restaurant-description">
+						<h1>Mel's Burgers</h1>
+						<img src="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/f2/d0/f2d0a18c65d9774b61b224ccebb568a1.jpg?itok=ixn6JgUE" width="70%" style="margin: 0 auto; display: block; margin-bottom: 10px;"/>
+						Consed et labo. Udae sa cum aut accus quias earchic ienderum comnihit ad que dipiet arit eni dolor ratinciae rerit ratemol oreperroria serionsequi tem harunt odis ut fugiatem volupti as- perum, expedit laccate cus sunt aut eos maximol uptatus maios assequos doluptatates quossus excereicia que cor molorec atquid maio doluptae plicabo. Nem rature labo. Et velessimusam faccae volesti illam et liquide ped eaquia ipsunt veliqui re, quodis aut laborep uditat litiate mporia doluptatur? Sedi quunt fugias den- dantest qui disitium que idFugiatur iorenda consectatus dolup-
 					</div>
 				</div>
+
 				<div class="col-xs-4">
 					<div style="padding-right:15px; margin-left=-15px;">
-					<h1>Ways to Save Money <br>and Eat Cheap</h1>
+					<h1 style="margin-bottom:40px">Ways to Save Money and Eat Cheap</h1>
+
 					<div class="eat-cheap-blurb">
 						<h1>Eat@CU Rewards</h1>
 						<h2>Ferit laut eliquis sitiunt istiandam sus accatur aliquiam des vollupt asimint venim et re nimag- nis mod quis molorupta aut maio. Ga. Nem. Molupta conse lacieturem isquam invende sunte imus, quid quam, velesequasi doloris quodit magnimi nction net ea si od ut alitatur? Quiam faccus expelectatia pedi ut vellitas ini- tius eaquam nectati ullenis modic</h2>
@@ -844,7 +850,84 @@
 	<div class="space-for-ad">
 		<div class="fluid-container">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-4">
+					<h1>Select an issue:</h1>
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Cultural</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Greek Life</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Engineering</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Magazines</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Academics</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Other Stuff</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Professional</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Airplanes</button>
+					</div>
+
+
+					<div style="height: 15px;border-bottom:solid 2px gray; width: 100%; margin-bottom: 5px;"></div>
+
+					<h1>Select a resource:</h1>
+
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Cultural</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Greek Life</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Engineering</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Magazines</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Academics</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Other Stuff</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Professional</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Airplanes</button>
+					</div>
+				</div>
+				<div class="col-xs-8">
+					<div class="groups-description">
+						<h1 id="subcategory-title">South Asian Groups</h1>
+						<div id="subcategory-img"></div>
+						<div id="longform-descriptions">
+							<h1>Club Zamana</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
+							</h2>
+							<h1>Asian American Alliance</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
+							</h2>
+							<h1>Club Zamana</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
+							</h2>
+							<h1>Asian American Alliance</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
+							</h2>
+							<h1>Club Zamana</h1>
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
+							</h2>
+							<h1>Asian American Alliance</h1
+							<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
+							What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
+							Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
+							</h2>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -861,41 +944,25 @@
 			<div class="row">
 				<div class="col-xs-4">
 					<h1>Select a category:</h1>
-					<div class="row">
-						<div class="col-xs-6">
-							<button class="orientation-button active" onClick="selectCategory(this)">Cultural</button>
+						<div class="row checkerboard">
+							<button class="category orientation-button active" onClick="selectCategory(this)">Cultural</button>
+							<button class="category orientation-button" onClick="selectCategory(this)">Greek Life</button>
 						</div>
-						<div class="col-xs-6">
-							<button class="orientation-button" onClick="selectCategory(this)">Greek Life</button>
+						<div class="row checkerboard">
+								<button class="category orientation-button" onClick="selectCategory(this)">Engineering</button>
+								<button class="category orientation-button" onClick="selectCategory(this)">Magazines</button>
 						</div>
-					</div>
-					<div class="row" style="margin-top: 10px;">
-						<div class="col-xs-6">
-							<button class="orientation-button" onClick="selectCategory(this)">Engineering</button>
+						<div class="row checkerboard">
+							<button class="category orientation-button" onClick="selectCategory(this)">Academics</button>
+							<button class="category orientation-button" onClick="selectCategory(this)">Other Stuff</button>
 						</div>
-						<div class="col-xs-6">
-							<button class="orientation-button" onClick="selectCategory(this)">Magazines</button>
+						<div class="row checkerboard">
+							<button class="category orientation-button" onClick="selectCategory(this)">Professional</button>
+							<button class="category orientation-button" onClick="selectCategory(this)">Airplanes</button>
 						</div>
-					</div>
-					<div class="row" style="margin-top: 10px;">
-						<div class="col-xs-6">
-							<button class="orientation-button" onClick="selectCategory(this)">Academics</button>
-						</div>
-						<div class="col-xs-6">
-							<button class="orientation-button" onClick="selectCategory(this)">Other Stuff</button>
-						</div>
-					</div>
-					<div class="row" style="margin-top: 10px;">
-						<div class="col-xs-6">
-							<button class="orientation-button" onClick="selectCategory(this)">Professional</button>
-						</div>
-						<div class="col-xs-6">
-							<button class="orientation-button" onClick="selectCategory(this)">Airplanes</button>
-						</div>
-					</div>
-					<div style="height: 15px;border-bottom:dotted 3px white; width: 100%; margin-bottom: 5px;"></div>
+					<div style="height: 15px;border-bottom:solid 2px gray; width: 100%; margin-bottom: 5px;"></div>
 					<h1>Select a sub-category:</h1>
-					<ul class="subcategories">
+					<ul id="magazines" class="subcategories">
 						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>
 						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>				
 						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>	
@@ -910,6 +977,54 @@
 						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>				
 						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>	
 						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Magazines</button></li>
+					</ul>
+					<ul id="professional" class="hidden subcategories">
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Professional</button></li>
+					</ul>
+					<ul id="airplanes" class="hidden subcategories">
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Airplanes</button></li>
+					</ul>
+					<ul id="greek-life" class="hidden subcategories">
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>				
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>	
+						<li><button class="subcategory-button" onClick="selectSubCategory(this)">Greek Life</button></li>
 					</ul>
 				</div>
 				<div class="col-xs-8">

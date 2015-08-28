@@ -32,3 +32,27 @@ function clickTradition(sender) {
 		$('#tradition-plural').text('traditions');		
 	}
 }
+
+function selectCategory(sender) {
+	var clicked = jQuery(sender);
+	$('.category').each(function (key, value) {
+		$(this).removeClass('active');
+	});
+	$(clicked).addClass('active');
+	$('.subcategories').each(function (key, value) {
+		$(this).addClass('hidden');
+	});
+
+	var id = $(sender).text().toLowerCase();
+	id = id.replace(' ', '-');
+	$('#'+id).removeClass('hidden');
+	console.log(id);
+}
+
+function selectResource(sender) {
+	var clicked = jQuery(sender);
+	$('.resource').each(function (key, value) {
+		$(this).removeClass('active');
+	});
+	$(clicked).addClass('active');
+}

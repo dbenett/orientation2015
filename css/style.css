@@ -14,7 +14,7 @@ body{
 }
 
 h1 { 
-    font-family:"Vollkorn", serif;
+    font-family:"Lato", sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	text-align: center;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-   	font-family:"Vollkorn";
+    font-family:"Lato", sans-serif;
    	font-size: 18px;
    	text-align: center;
    	font-weight: 500;
@@ -61,12 +61,16 @@ h3 {
 	clear: both;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
 /* HEADER & NAVIGATION */
 
 #header { 
 	width: 100%; 
-   	background: rgb(196, 216, 226); /* The Fallback */
-   	background: rgba(196, 216, 226, 0.9); 
+   	background: rgb(200, 192, 183); /* The Fallback */
+   	background: rgba(197, 207, 217, .95); 
    	height: 80px; 	
 	position: fixed;
 	z-index: 5;
@@ -89,19 +93,19 @@ h3 {
 }
 
 #nav li a {
-	color: #fff;
+	color: rgb(17, 63, 110);
 	opacity:0.6;
 	font-size: 20px;
 	text-decoration: none;
-	font-family: 'Vollkorn', serif;
+	font-family: 'Lato', sans-serif;
 	outline: 0;
 }
 #nav li a.active {
-	color: #fff;
+	color: rgb(17, 63, 110);
 	opacity:1;
 }
 #nav li a:hover {
-	color: #fff;
+	color: rgb(17, 63, 110);
 	opacity:1;
 }
 
@@ -161,47 +165,55 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 
 
-/* SLIDES STYLING */
+/* GENERAL SLIDES STYLING */
+
 
 .slide-title {
-	font-family: 'Vollkorn', serif;
+	font-family:"Lato", sans-serif;
 	font-weight: 700;
 	font-size: 40px;
 	text-align: center;
 	width: 100%;
-	border-top: dotted 3px;
-	border-bottom: dotted 3px;
-	margin: 10px 0px;
+	border-top: solid 2px gray;
+	border-bottom: solid 2px gray;
+	margin: -1px 0px 10px 0px;
 }
 
 .two-line-text {
 	margin: 0;
 }
 
+.checkerboard {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+/*inline block has default 4px margin between elements (so margin-right set at 6 to equal checkerboard's 10px padding*/
+
+
 .orientation-button {
-	background-color:transparent;
-	-moz-border-radius:22px;
-	-webkit-border-radius:22px;
-	border-radius:22px;
-	border:1px solid #ffffff;
+	border:0;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Vollkorn', serif;
+	background-color: rgb(127, 167, 197);
+	background-color: rgba(127, 167, 197, .95);
+	font-family:"Lato", sans-serif;
 	font-size:17px;
 	padding:12px 31px;
 	min-width: 175px;
 	text-decoration:none;
 	outline: 0;
+	margin-right: 6px;
 }
 
 .orientation-button:hover {
 	background-color:transparent;
+	background-color: rgba(97, 137, 167, .95);
 	outline: 0;
 }
 
 .orientation-button.active {
-	background-color: rgba(100,100,255,.75);
+	background-color: rgba(47, 87, 117, .95);
 }
 
 /* SLIDESHOW STYLING */
@@ -317,7 +329,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 /* FIRST SLIDE STYLING (PLAIN IMAGE/WELCOME MESSAGE)*/
 
 	#slide1{
-		background:url('https://upload.wikimedia.org/wikipedia/commons/5/54/Outside_Columbia_University_Library_(5892425145).jpg') 50% 0 no-repeat fixed;
+		background:url('../img/nsopcover2.jpg') 50% 80% no-repeat;
 		color: #fff;
 		margin: 0;
 		padding: 200px 0 260px 0;
@@ -343,7 +355,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 		padding: 30px 40px;
 	   	background: rgb(200, 200, 200); /* The Fallback */
 		background: rgba(200, 200, 200, .6);
-	    border-radius: 50px;
+	    border-radius: 5px;
 	    font-size: 18px;
 		color: white; 
 	}
@@ -359,14 +371,21 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	}
 
 	.course-box {
-		border: solid 1px;
+		border: 0;
 		overflow: visible;
 		height: 150px;
 		width: 100%;
 		margin: 20px 0px 0px 20px;
 		outline: 0;
-		background: none;
+		background-color: rgba(197, 207, 217, .95);
 		padding: 0px 0px 0px 0px;
+	}
+
+	.course-box:hover {
+/*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
+	background-color: rgba(127, 167, 197, .95);
 	}
 
 	.course-box > img {
@@ -396,11 +415,24 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 		line-height: 18px;
 		color: black;
 		font-size: 16px;
-	   	font-family:"Vollkorn";
+	   	font-family:"Lato", sans-serif;
 	   	font-weight: 500;
 	}
 
 /* THIRD SLIDE STYLING */
+	#slide3{
+		background-color: black; /* fallback */
+	   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	   				url('../img/nsopcover2.jpg') 50% 0 no-repeat fixed;
+		color: #fff;
+		padding: 80px 0 80px 0;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	#slide3 h1, #slide3 h2 {
+		color: white;
+	}
 
 	#food-container{
 		margin: 25px auto;
@@ -411,15 +443,18 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 		background: url('../img/morningside_heights.jpg') 50% 0;
 	  	background-size: 100% 100%;
 		width: 100%;
-		height: 325px;
+		height: 600px;
+		margin: 20px 15px;
 	}
 
 	#restaurant-description {
+		padding: 3px 20px 15px 20px;
 		width: 100%;
-		height: 200px;
 		margin-top: 20px;
+		border-radius: 5px;
 		background: rgb(200,200,200);
-		background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0)),
+		background: rgba(200,200,200,.5);
+		/*background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0));*/
 	}
 
 	.eat-cheap-blurb {
@@ -434,20 +469,6 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	.eat-cheap-blurb h2 {
 		font-size: 16px;
 		text-align: left;
-	}
-
-	#slide3{
-		background-color: black; /* fallback */
-	   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-	   				url('http://videoandfilmmaker.com/wp/wp-content/uploads/2014/04/IMG_1534.jpg') 50% 0 no-repeat fixed;
-		color: #fff;
-		padding: 80px 0 80px 0;
-		background-size: cover;
-		overflow: hidden;
-	}
-
-	#slide3 h1, #slide3 h2 {
-		color: white;
 	}
 
 /* FOURTH SLIDE STYLING */
@@ -529,7 +550,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	#subway-stop-map {
 		width: 100%;
 		margin-left: 20px;
-		height: 500px;
+		height: 300px;
 		background: url('../img/morningside_heights.jpg') 50% 0;
 	  	background-size: 100% 100%;
 	}
@@ -550,7 +571,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 	#subway-area-site {
 		width: 90%;
-		height: 540px;
+		height: 340px;
 		margin: 20px 0px 10px 20px;
 		background: rgb(200,200,200);
 	}
@@ -559,7 +580,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 	#slide5{
 	   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-	   				url('http://features.columbiaspectator.com/news/wp-content/uploads/sites/3/2015/02/TA_Youjin-Jenny-Jang_Low-and-Alma.jpg') 50% 0 no-repeat fixed;
+	   				url('../img/nsopcover2.jpg') 50% 0 no-repeat fixed;
 		margin: 0 auto;
 		padding: 80px 0 80px 0;
 		color: #fff;
@@ -572,9 +593,9 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 		overflow:hidden;
 		overflow-y:scroll;
 		border: solid 1px white;
-		border-radius: 20px;
+		border-radius: 5px;
 		padding: 10px 10px;
-
+		background-color: rgba(200,200,200,.25);
 	}
 
 	.tradition {
@@ -609,7 +630,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	    text-align:center;
 	    line-height:45px;
 	    border-radius: 50%;
-	    font-size: 36px;
+	    font-size: 28px;
 	    display: inline-block;
 		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		margin-bottom: 15px;
@@ -621,7 +642,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	}*/
 
 	.trad-descip {
-		font-family:"Vollkorn";
+		font-family:"Lato", sans-serif;
 	   	font-size: 16px;
 	   	text-align: left;
 	   	font-weight: 500;
@@ -632,6 +653,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 		margin-top: -5px;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		padding-left: 10px;
 		vertical-align: middle;
 	}
 
@@ -664,8 +686,8 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 /* SEVENTH SLIDE STYLING */
 #slide7{
-   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-   				url('http://www.jonpchan.com/wp-content/uploads/2009/09/DSC_9507.jpg') 50% 0 no-repeat fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	   				url('../img/nsopcover2.jpg') 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	padding: 80px 0 80px 0;
 	color: #fff;
@@ -683,6 +705,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	margin-top: -10px;
   	margin:0;
   	padding: 0;
+	background-color: rgba(200,200,200,.25);
 }
 
 .subcategories > li {
@@ -691,29 +714,28 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 .subcategory-button {
 	width: 80%; 
-	background-color:transparent;
-	-moz-border-radius:22px;
-	-webkit-border-radius:22px;
-	border-radius:22px;
-	border:1px solid #ffffff;
 	display:block;
 	margin: 0 auto;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: 'Vollkorn', serif;
+	font-family:"Lato", sans-serif;
 	font-size:17px;
 	padding:6px 0px;
 	text-decoration:none;
 	outline: 0;
+	border: 0;
+	background-color: rgb(127, 167, 197);
+	background-color: rgba(127, 167, 197, .95);
 }
 
 .subcategory-button:hover {
 	background-color:transparent;
+	background-color: rgba(97, 137, 167, .95);
 	outline: 0;
 }
 
 .subcategory-button.active {
-	background-color: rgba(100,100,255,.75);
+	background-color: rgba(47, 87, 117, .95);
 }
 
 .groups-description {
@@ -722,7 +744,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	margin: 20px auto;
 	background: #AAA;
 	background: linear-gradient(rgba(200, 200, 200, .75), rgba(200, 200, 200, 0));
-	border-radius: 20px;
+	border-radius: 5px;
 	padding: 5px 15px;
 	overflow:hidden;
 	overflow-y:scroll;
@@ -752,7 +774,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 .modal h3 {
-	font-family:"Vollkorn", serif;
+	font-family:"Lato", sans-serif;
 	text-align: left;
 	font-size: 16px;
 	color: black;
@@ -767,7 +789,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 .modal-h1 {
-	font-family:"Vollkorn", serif;
+	font-family:"Lato", sans-serif;
 	text-align: center;
 	font-size: 22px;
 	line-height: 24px;
@@ -775,14 +797,14 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 .modal-h2 {
-	font-family:"Vollkorn", serif;
+	font-family:"Lato", sans-serif;
 	text-align: center;
 	font-size: 16px;
 	color: black;
 }
 
 .modal-percent {
-	font-family: "Vollkorn", serif;
+	font-family:"Lato", sans-serif;
 	text-align: center;
 	font-size: 42px;
 	color: purple;
