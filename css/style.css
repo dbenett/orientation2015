@@ -150,7 +150,6 @@ h3 {
 	}
 
 	.checkerboard {
-		padding-bottom: 10px;
 		text-align: center;
 	}
 
@@ -166,10 +165,23 @@ h3 {
 		font-family:"Lato", sans-serif;
 		font-size:17px;
 		padding:12px 31px;
-		min-width: 175px;
+		width: 175px;
+		height: 50px;
 		text-decoration:none;
 		outline: 0;
 		margin-right: 6px;
+		margin-bottom: 10px;
+		vertical-align: middle;
+		position: relative;
+	}
+
+	.vertical-center-content {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		margin: auto;
+		text-align:center;
+		width:100%;
+		display:table;
 	}
 
 	.orientation-button:hover {
