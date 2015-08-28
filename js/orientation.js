@@ -1,4 +1,20 @@
+function toBarnardRegistrationVideo(button){
+	$("iframe").click(function(e) {
+    e.preventDefault();
+  $("#registration-video").attr("src", "https://www.youtube.com/watch?v=ej3ioOneTy8");
+    })
+	$('#columbia-button').removeClass('active');
+	$('#barnard-button').addClass('active');
+}
 
+function toColumbiaRegistrationVideo(button){
+	$("iframe").click(function(e) {
+    e.preventDefault();
+  $("#registration-video").attr("src", "https://www.youtube.com/embed/WSk7_I-WHV8");
+    })
+	$('#barnard-button').removeClass('active');
+	$('#columbia-button').addClass('active');
+}
 
 function toManhattanMap(button) {
 	$('#food-map').css('background', 'url("http://static.thousandwonders.net/Manhattan.640.12979.jpg") 50% 0');

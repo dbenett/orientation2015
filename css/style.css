@@ -359,6 +359,10 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	    font-size: 18px;
 		color: white; 
 	}
+	#welcome-text{
+		text-align: justify;
+	
+	}
 
 /* SECOND SLIDE STYLING */
 	#slide2{

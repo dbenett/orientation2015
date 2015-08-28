@@ -87,7 +87,9 @@
 	<div class="space-for-ad">
 		<div id="welcome-message">
 			<div id="welcome-title">Welcome to Columbia University from Spectator!</div>
-			<br>Ahae orsuam publi in a rem Romnovit. Etratius, firis prid sulto intestia clego et virtem, vivistrips, ut in Itamquam horbis es contiere, sid rei pulico trei senit vo, ca; hi, mur ut vehemus, vite, Catumei consus C. Quam orei con detis vivesilium nortam mei inum unultortam pata patuium sulvidite nonit igit. Sa rei poeriberum et facierte ium notervit nu simunu verenih icionum unum stratam Romnonsil capereci con ve, omnest es nostin alin deperfecre que apere- bus nonsule rvideatque intilistra tamquem, Cuppliam es bon temus audesic ibeferium acerit, num essentiam rei publibuline catim vivirmili, Ti. Asteret vemo considi endite abus comnissedet; nonstat re essenatis, nonum untemus publi sultus bon hacchus; niureconsum revid de acipicus, acitus enerim et facit, que nim plicae cerimunum audem- nostam tua L. Sus, quo porbi init. <br> Am. Fuius At actus iam prae, tea st pribus horte num nonfente cotiurbit; nem sulibute fue nium sus consusul hoc factala bultod is, efex nostaticiam, cut L. Scit? O te fure num mo iacivasta, nos conere, condam feci sicum nostem, que ceret ipientrem eniciaed inatien interei pro consulicae aut Catia? Otemuli forit? Nihilin vid cupion vidi tatis facchuitum nocum in iusquon ditia? Ne ne rem in prehem publicaed intissua reo iam sentem ducturestiam vilicat uidefac rentius abultus es hora inamdit. Tore, faut inum tam in iam re niur, quam inum tam noc issolto eruro, nu- mus; hussesi praedemquius faciam pribusperei culi, consus crebussa it intela nihilia cupiem fit, vit vium, coenihiliis. Num ce quastrae convehem essulles in apecupi octemur artiam iam isque nostam publius consulem nis redo, di- entif ecertiliis imuri sin spic forudes addum culicia mporei sendesu larteba tastrac medicaetis; C. M. Scia coernim ovilibunimo mover adetrum dem sediis, sedelica; ius vendin tebatic ibemnost viverid emnonsultum traestr ebatquo mercere nsulicipses prature natiam ora intelibus
+			<div id="welcome-text">
+				<br>Ahae orsuam publi in a rem Romnovit. Etratius, firis prid sulto intestia clego et virtem, vivistrips, ut in Itamquam horbis es contiere, sid rei pulico trei senit vo, ca; hi, mur ut vehemus, vite, Catumei consus C. Quam orei con detis vivesilium nortam mei inum unultortam pata patuium sulvidite nonit igit. Sa rei poeriberum et facierte ium notervit nu simunu verenih icionum unum stratam Romnonsil capereci con ve, omnest es nostin alin deperfecre que apere- bus nonsule rvideatque intilistra tamquem, Cuppliam es bon temus audesic ibeferium acerit, num essentiam rei publibuline catim vivirmili, Ti. Asteret vemo considi endite abus comnissedet; nonstat re essenatis, nonum untemus publi sultus bon hacchus; niureconsum revid de acipicus, acitus enerim et facit, que nim plicae cerimunum audem- nostam tua L. Sus, quo porbi init. <br> Am. Fuius At actus iam prae, tea st pribus horte num nonfente cotiurbit; nem sulibute fue nium sus consusul hoc factala bultod is, efex nostaticiam, cut L. Scit? O te fure num mo iacivasta, nos conere, condam feci sicum nostem, que ceret ipientrem eniciaed inatien interei pro consulicae aut Catia? Otemuli forit? Nihilin vid cupion vidi tatis facchuitum nocum in iusquon ditia? Ne ne rem in prehem publicaed intissua reo iam sentem ducturestiam vilicat uidefac rentius abultus es hora inamdit. Tore, faut inum tam in iam re niur, quam inum tam noc issolto eruro, nu- mus; hussesi praedemquius faciam pribusperei culi, consus crebussa it intela nihilia cupiem fit, vit vium, coenihiliis. Num ce quastrae convehem essulles in apecupi octemur artiam iam isque nostam publius consulem nis redo, di- entif ecertiliis imuri sin spic forudes addum culicia mporei sendesu larteba tastrac medicaetis; C. M. Scia coernim ovilibunimo mover adetrum dem sediis, sedelica; ius vendin tebatic ibemnost viverid emnonsultum traestr ebatquo mercere nsulicipses prature natiam ora intelibus
+			</div>
 		</div>
 	</div>
 </div> 
@@ -187,7 +189,12 @@
 				</div>
 				<div class="col-xs-6">
 					<h1> How to Register </h1>
-					<iframe width="560" height="315" style="margin:38px auto 30px auto; display:block;" src="https://www.youtube.com/embed/WSk7_I-WHV8" frameborder="0" allowfullscreen></iframe>
+					<!--toggle between Barnard and Columbia videos-->
+					<div style="text-align: center;">
+						<button id="columbia-button" class="orientation-button active" onClick="toColumbiaRegistrationVideo(this)">Columbia</button>
+						<button id="barnard-button" class="orientation-button" onClick="toBarnardRegistrationVideo(this)">Barnard</button>
+					</div>
+					<iframe width="560" height="315" style="margin:38px auto 30px auto; display:block;" src="https://www.youtube.com/embed/WSk7_I-WHV8" frameborder="0" allowfullscreen id= "registration-video"></iframe>
 					<h2></h2>
 					<h1> Registration tools: a guide </h1>
 					<div class="row">
