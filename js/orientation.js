@@ -56,3 +56,4 @@ function selectResource(sender) {
 	});
 	$(clicked).addClass('active');
 }
+

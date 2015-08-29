@@ -6,53 +6,8 @@
     <link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/responsiveslides.css"/>
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/orientation.js"></script>
-  	<script src="js/responsiveslides.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-	<script>
-   
-	<!----- JQUERY FOR SLIDING NAVIGATION --->   
-	$(document).ready(function() {
-	  $('a[href*=#]').each(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-	    && location.hostname == this.hostname
-	    && this.hash.replace(/#/,'') ) {
-	      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-	      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-	       if ($target) {
-	         var targetOffset = $target.offset().top;
 
-	<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-	         $(this).click(function() {
-	            $("#nav li a").removeClass("active");
-	            $(this).addClass('active');
-	           $('html, body').animate({scrollTop: targetOffset}, 1000);
-	           return false;
-	         });
-	      }
-	    }
-	  });
-
-	});
-
-
-	</script>
-
-  <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      // Slideshow 4
-      $("#slider4").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "callbacks"
-      });
-    });
-  </script>
 
 
 </head> 
@@ -809,31 +764,28 @@
 			</div>
 			<div class="col-xs-8">
 			    <!-- Slideshow 4 -->
-				  <div id="wrapper">
+			    <div class="slideshow-wrapper" max-width="100px;">
+			      <div class="callbacks_container">
+			        <ul class="rslides" id="slider4">
+			          <li>
+			            <img src="http://d3819ii77zvwic.cloudfront.net/wp-content/uploads/2015/06/roo-w800-h400.jpg" alt="">
+			            <p class="caption">This is a caption</p>
+			          </li>
+			          <li>
+			            <img src="https://lh6.googleusercontent.com/-DHYgZFK_-jQ/URPtTNBShII/AAAAAAAAHUo/Ap1r-8OIv24/w800-h800/photo.jpg" alt="">
+			            <p class="caption">This is another caption that is much longer and tests what happens when there is a much longer caption to make sure it does not break the formatting of the page.</p>
+			          </li>
+			          <li>
+			            <img src="http://www.beyond.fr/picsvill2/steagnes0065b.jpg" alt="">
+			            <p class="caption">The third caption</p>
+			          </li>
+			        </ul>
+			      </div>
+			    </div>
 
-				    <div class="slideshow-wrapper">
-				      <!-- Slideshow 4 -->
-				      <div class="callbacks_container">
-				        <ul class="rslides" id="slider4">
-				          <li>
-				            <img src="http://d3819ii77zvwic.cloudfront.net/wp-content/uploads/2015/06/roo-w800-h400.jpg" alt="">
-				            <p class="caption">This is a caption</p>
-				          </li>
-				          <li>
-				            <img src="https://lh6.googleusercontent.com/-DHYgZFK_-jQ/URPtTNBShII/AAAAAAAAHUo/Ap1r-8OIv24/w800-h800/photo.jpg" alt="">
-				            <p class="caption">This is another caption that is much longer and tests what happens when there is a much longer caption to make sure it does not break the formatting of the page.</p>
-				          </li>
-				          <li>
-				            <img src="http://www.beyond.fr/picsvill2/steagnes0065b.jpg" alt="">
-				            <p class="caption">The third caption</p>
-				          </li>
-				        </ul>
-				      </div>
-				    </div>
-				  </div>
-				  <div style="padding-top: 50px; display:block; white-space: nowrap; text-align: center;">
+				<div style="padding-top: 50px; display:block; text-align: center;">
 					<h1> You have completed <div id="tradition-count">0</div> <div id="tradition-plural" style="display:inline;">traditions</div> so far! </h1>
-				  </div>
+				</div>
 
 
 			</div>
@@ -1309,25 +1261,25 @@
 		<div class="row no-padding">
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Northwest Corner Building</span>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
-				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#diana-center"/>
 					<span class="image-text">Diana Center</span>				
 				</div>				
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#under-the-magnolia-tree"/>
 					<span class="image-text">Under the Magnolia Tree</span>			
 				</div>				
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#noco"/>
+					<span class="image-text">NoCo</span>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+				<div class="image-text-container">
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#hungarian-pastry-shop"/>
 					<span class="image-text">Hungarian Pastry Shop</span>				
 				</div>
 			</div>
@@ -1335,79 +1287,79 @@
 		<div class="row no-padding">
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Max Caffe</span>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
-				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Uris Business School Library</span>				
-				</div>				
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
-				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#butler-library"/>
 					<span class="image-text">Butler Library</span>
 				</div>				
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Kent East Asian Library</span>				
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#max-caffe"/>
+					<span class="image-text">Max Caffe</span>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+				<div class="image-text-container">
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#business-and-economics-library"/>
+					<span class="image-text">Business and Economics Library</span>				
+				</div>				
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+				<div class="image-text-container">
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#brownies-cafe"/>
+					<span class="image-text">Brownie's Cafe</span>				
 				</div>
 			</div>
 		</div>
 		<div class="row no-padding">
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Carleton Lounge</span>
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#nussbaum"/>
+					<span class="image-text">Nussbaum</span>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Teaching and Learning Center Construction</span>
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#schapiro-lounge"/>
+					<span class="image-text">Schapiro Lounge</span>
 				</div>				
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Teaching and Learning Center Construction</span>				
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#llc-sky-lounges"/>
+					<span class="image-text">LLC Sky Lounges</span>
 				</div>				
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Teaching and Learning Center Construction</span>				
-				</div>
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#low-steps"/>
+					<span class="image-text">Low Steps</span>				
+				</div>				
 			</div>
 		</div>
 		<div class="row no-padding">
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Teaching and Learning Center Construction</span>
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#starr-east-asian-library"/>
+					<span class="image-text">Starr East Asian Library</span>				
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
 				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Teaching and Learning Center Construction</span>				
-				</div>				
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
-				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Teaching and Learning Center Construction</span>				
-				</div>				
-			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
-				<div class="image-text-container">
-					<img src="img/butler.jpg" data-toggle="modal" data-target="#story-to-watch-modal"/>
-					<span class="image-text">Teaching and Learning Center Construction</span>			
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#lerner-hall"/>
+					<span class="image-text">Lerner Hall</span>				
 				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+				<div class="image-text-container">
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#carleton-commons"/>
+					<span class="image-text">Carleton Commons</span>				
+				</div>				
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 no-padding">
+				<div class="image-text-container">
+					<img src="img/butler.jpg" data-toggle="modal" data-target="#paris-baguette"/>
+					<span class="image-text">Paris Baguette</span>				
+				</div>				
 			</div>
 		</div>
 	</div>
@@ -1498,5 +1450,402 @@
 	</div>
 </div>
 
+<div class="modal fade" id="diana-center" role="dialog">
+	<div class="modal-dialog modal-lg">
+	  <!-- Modal content-->
+	  <div class="modal-content">
+	    <div class="modal-header dotted-bottom" style="color:black;">
+	      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      	<h1 style="color:black; line-height:10px;">Diana Center</h1>
+		</div>
+	    <div class="modal-body row">
+		  <div class="col-xs-6">
+	  		 <div class="slideshow-wrapper">
+		      <div class="callbacks_container">
+		        <ul class="rslides" id="ss-diana-center">
+		          <li>
+		            <img src="img/study_spaces/diana_center/Diana_center-01.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/diana_center/Diana_center-02.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/diana_center/Diana_center-03.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/diana_center/Diana Center_01_Christie-Dervaux.jpg" alt="">
+		          </li>		        
+		          <li>
+		            <img src="img/study_spaces/diana_center/Diana Center_02_Christie-Dervaux.jpg" alt="">
+		          </li>
+		      </ul>
+		      </div>
+		    </div>
+
+		  </div>
+		  <div class="col-xs-6 modal-bodytext-container">
+		  	<h3>
+				<span class="bold">Liz’s Place:</span> Grab a coffee and snack at the coffee shop inside the first floor of the Diana Center, and get some work done on the comfy red seats. It can get very crowded, especially during lunchtimes and late afternoons when people want coffee, so try to get there earlier if you want a seat. Don’t work here if you need a quiet place, since there will be loud music, coffee machine sounds, and student chatter throughout the day. They also take Barnard points and Flex!
+				<ul>
+					<li><span class="bold">Pros:</span> You’re in the perfect spot if you need caffeine and food. The radio usually plays top 10 music if you like that, the big red seats are comfortable, and there are Mac computers that you can use.</li>
+					<li><span class="bold">Cons:</span> It will get very crowded with long lines during prime caffeinating times (morning, lunchtime, late afternoon). The tables there are super low, which aren’t conducive to working.</li>
+					<li><span class="bold">Tips:</span> You get a discount on drinks if you bring a reusable mug</li>
+					<li><span class="bold">Hours:</span> Monday through Thursday: 8 a.m. to 2 a.m.; Friday: 8 a.m. to 8 p.m.; Saturday: closed; Sunday: 4 p.m. to 11 p.m.</li>
+				</ul>
+				<span class="bold">Second Floor McIntosh Dining Room:</span> Take advantage of lots of seating when it’s not breakfast and lunch on the second floor of the Diana.
+				<ul>
+					<li><span class="bold">Pros:</span> Lots of tables and seats at which you can spread out, relatively quiet when the café isn’t open, close proximity to Liz’s Place if you want to grab coffee and a snack, great natural light</li>
+					<li><span class="bold">Cons:</span> Only works as a study space when the café is closed since students will be using the dining room to eat; tables can sometimes be dirty if you get there right after lunch </li>
+					<li><span class="bold">Tips:</span> Get there around late afternoon or early evening. There’s also seating outside of the dining room near the staircase, but it will be louder there.</li>
+				</ul>
+			</h3>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<div class="modal fade" id="under-the-magnolia-tree" role="dialog">
+	<div class="modal-dialog modal-lg">
+	  <!-- Modal content-->
+	  <div class="modal-content">
+	    <div class="modal-header dotted-bottom" style="color:black;">
+	      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      	<h1 style="color:black; line-height:10px;">Under the Magnolia Tree</h1>
+		</div>
+	    <div class="modal-body row">
+		  <div class="col-xs-6">
+	  		 <div class="slideshow-wrapper">
+		      <div class="callbacks_container">
+		        <ul class="rslides" id="ss-under-the-magnolia-tree">
+		          <li>
+		            <img src="img/study_spaces/under_the_magnolia_tree/Magnolia_Wood-2.jpg" alt="">
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-xs-6 modal-bodytext-container">
+		  	<h3>
+				Take advantage of the last few weeks of nice weather, and park yourself under the magnolia tree for some relaxing study time. 
+				<ul>
+					<li><span class="bold">Pros:</span> It’s the perfect outdoor reading spot, and it’s situated right in the middle of Barnard’s campus.</li>
+					<li><span class="bold">Cons:</span> Working outdoors can be distracting, especially in a high traffic area like the under of the magnolia tree.</li>
+					<li><span class="bold">Tips:</span> The magnolia tree will permanently move to the Diana Center terrace in November, so make sure you get plenty of photos with the tree in its original location.</li>
+					<li><span class="bold">Hours:</span> Monday through Thursday: 8 a.m. to 2 a.m.; Friday: 8 a.m. to 8 p.m.; Saturday: closed; Sunday: 4 p.m. to 11 p.m.</li>
+				</ul>
+			</h3>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<div class="modal fade" id="noco" role="dialog">
+	<div class="modal-dialog modal-lg">
+	  <!-- Modal content-->
+	  <div class="modal-content">
+	    <div class="modal-header dotted-bottom" style="color:black;">
+	      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      	<h1 style="color:black; line-height:10px;">NoCo</h1>
+		</div>
+	    <div class="modal-body row">
+		  <div class="col-xs-6">
+	  		 <div class="slideshow-wrapper">
+		      <div class="callbacks_container">
+		        <ul class="rslides" id="ss-noco">
+		          <li>
+		            <img src="img/study_spaces/noco/Noco_2nd_floor.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/noco/Joe's_01.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/noco/Joe's_02.jpg" alt="">
+		          </li>
+		      </ul>
+		      </div>
+		    </div>
+
+		  </div>
+		  <div class="col-xs-6 modal-bodytext-container">
+		  	<h3>
+				<span class="bold">Science & Engineering Library:</span> Located inside the Northwest Corner Building, the Science & Engineering Library is the quintessential SEAS student library. (Of course, anyone can study here, though.) 
+				<ul>
+					<li><span class="bold">Pros:</span> Great natural lighting on all floors, individualized study spaces, and working printers on both floors that are almost never broken.</li>
+					<li><span class="bold">Cons:</span> Can get very crowded quickly since it’s a popular study spot, computers are slow, farther from first-year dorms.</li>
+					<li><span class="bold">Tips:</span>  First floor is not designated to be a quiet study space, so head to the second floor if you’re looking for a quiet experience.</li>
+					<li><span class="bold">Hours:</span> Monday through Thursday: 9 a.m. to 11 p.m.; Friday: 9 a.m. to 1 a.m. Saturday: 11 a.m. to 11 p.m.; Sunday: 11 a.m. to 10 p.m.</li>
+				</ul>
+				<span class="bold">Joe Coffee:</span> Joe Coffee is another great place to grab a cappuccino and snack to work—if you can snag a coveted seat. The place fills up fast, but it has a great view and nice ambiance. 
+				<ul>
+					<li><span class="bold">Pros:</span> Entirely glass walls, so there’s plenty of natural light, good coffee, and pastries.</li>
+					<li><span class="bold">Cons:</span> It’s rare to find a free table when you arrive, and the coffee is on the pricey side.</li>
+					<li><span class="bold">Tips:</span> Even if a table is taken, people are usually willing to share if the table has a free seat—don’t be afraid to ask! If you head upstairs, there are also a few benches and seats that you can use (but they’re not a part of Joe). Also, don’t forget to get a punch card when you buy your coffee. You’ll earn a free one after 10 trips.</li>
+					<li><span class="bold">Hours:</span> Monday through Friday: 8 am. to 8 p.m.; Saturday through Sunday: 9 a.m. to 6 p.m.</li>
+				</ul>
+			</h3>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<div class="modal fade" id="hungarian-pastry-shop" role="dialog">
+	<div class="modal-dialog modal-lg">
+	  <!-- Modal content-->
+	  <div class="modal-content">
+	    <div class="modal-header dotted-bottom" style="color:black;">
+	      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      	<h1 style="color:black; line-height:10px;">Hungarian Pastry Shop</h1>
+		</div>
+	    <div class="modal-body row">
+		  <div class="col-xs-6">
+	  		 <div class="slideshow-wrapper">
+		      <div class="callbacks_container">
+		        <ul class="rslides" id="ss-hungarian-pastry-shop">
+		          <li>
+		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_01.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_02.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_03.jpg" alt="">
+		          </li>
+		      </ul>
+		      </div>
+		    </div>
+
+		  </div>
+		  <div class="col-xs-6 modal-bodytext-container">
+		  	<h3>
+				Indulge in delicious pastries and bottomless cups of coffee at this cozy spot. The shop is perfect for anyone who enjoys a café atmosphere, but it’s probably not the best place if you need to hunker down for an exam because of its dim lighting and background noise.
+				<ul>
+					<li><span class="bold">Pros:</span> Another great café-style study spot away from campus (and right next to the Cathedral of Saint John the Divine), open relatively late, $4 for unlimited coffee refills </li>
+					<li><span class="bold">Cons:</span> Farther from campus, no Wi-Fi (but you can connect to Columbia’s Wi-Fi if you’re lucky), space isn’t very large so it can get crowded quickly, no power outlets.</li>
+					<li><span class="bold">Tips:</span>  Don’t forget to bring cash because they don’t take credit/debit cards. </li>
+					<li><span class="bold">Hours:</span> Monday through Friday: 7:30 a.m. to 11:30 p.m.; Saturday: 8:30 a.m. to 11:30 p.m.; Sunday: 8:30 a.m. to 10:30 p.m.</li>
+					<li><span class="bold">Address:</span> 1030 Amsterdam Ave, New York, NY 10025 (between Cathedral Parkway and 111th Street)</li>				
+				</ul>
+			</h3>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<div class="modal fade" id="butler-library" role="dialog">
+	<div class="modal-dialog modal-lg">
+	  <!-- Modal content-->
+	  <div class="modal-content">
+	    <div class="modal-header dotted-bottom" style="color:black;">
+	      	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      	<h1 style="color:black; line-height:10px;">Hungarian Pastry Shop</h1>
+		</div>
+	    <div class="modal-body row">
+		  <div class="col-xs-6">
+	  		 <div class="slideshow-wrapper">
+		      <div class="callbacks_container">
+		        <ul class="rslides" id="ss-butler-library">
+		          <li>
+		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_01.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_02.jpg" alt="">
+		          </li>
+		          <li>
+		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_03.jpg" alt="">
+		          </li>
+		      </ul>
+		      </div>
+		    </div>
+
+		  </div>
+		  <div class="col-xs-6 modal-bodytext-container">
+		  	<h3>
+				<span class="bold">(Lounge and lower floors):</span> Butler hardly needs mentioning as a study space. You will definitely be spending more time here than you’d like in your four years at Columbia.
+				<ul>
+					<li><span class="bold">Pros:</span> Columbia’s only library that’s open 24/7, great for really feeling like a quintessential Columbia student. Blue Java Coffee Bar on the first floor is also super convenient for maintaining constantly high levels of caffeine in your bloodstream. </li>
+					<li><span class="bold">Cons:</span> You’ll probably run into half the people you know at Columbia and spend a lot of time catching up instead of studying. </li>
+					<li><span class="bold">Tips:</span>  Seats are often completely filled on weekdays even as early as the afternoon. Be willing to share tables with strangers or spend a lot of time craning your neck and hovering like a vulture in order to snag a seat during peak hours. </li>
+					<li><span class="bold">Hours (for cafe only):</span> Monday through Thursday: 8 a.m. to 2 a.m.; Friday: 8 a.m. to 9 p.m.; Saturday: 9 a.m. to 6 p.m.; Sunday: 9 a.m. to 2 a.m.</li>
+				</ul>
+			</h3>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
 </body>
 </html>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/orientation.js"></script>
+  	<script src="js/responsiveslides.min.js"></script>
+
+  		<script>
+   
+	<!----- JQUERY FOR SLIDING NAVIGATION --->   
+	$(document).ready(function() {
+	  $('a[href*=#]').each(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	    && location.hostname == this.hostname
+	    && this.hash.replace(/#/,'') ) {
+	      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+	      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+	       if ($target) {
+	         var targetOffset = $target.offset().top;
+
+	<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+	         $(this).click(function() {
+	            $("#nav li a").removeClass("active");
+	            $(this).addClass('active');
+	           $('html, body').animate({scrollTop: targetOffset}, 1000);
+	           return false;
+	         });
+	      }
+	    }
+	  });
+	});
+
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+      });
+
+     // Slideshows for Study Space Modals 
+	      $("#ss-diana-center").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });
+	      $("#ss-under-the-magnolia-tree").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });
+
+	      $("#ss-noco").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });      
+
+	      $("#ss-hungarian-pastry-shop").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });
+
+	      $("#ss-butler-library").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });
+
+	      $("#ss-max-caffe").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });    
+
+	      $("#ss-business-and-economics-library").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });    
+	      $("#ss-max-caffe").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-brownies-cafe").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-nussbaum").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-schapiro-lounge").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-llc-sky-lounges").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-low-steps").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-starr-east-asian-library").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-lerner").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-carleton-commons").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+	      $("#ss-paris-baguette").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks"
+	      });   
+});
+
+  </script>
