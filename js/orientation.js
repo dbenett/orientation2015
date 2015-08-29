@@ -1,36 +1,11 @@
-function toBarnardRegistrationVideo(button){
+function selectVideo(sender){
+	var clicker=setActive(sender, '.video');
+
+	var vidID = '#'+$(clicker).text().toLowerCase().replace(' ', '-')+'-video';
+	console.log(vidID);
+	setVisible(vidID, '.registration-iframe');
+}
 	
-	$('#columbia-video').addClass('hidden');
-	$('#quick-tips-video').addClass('hidden');
-	$('#barnard-video').removeClass('hidden');
-
-	$('#columbia-video').removeClass('active');
-	$('#quick-tips-video').removeClass('active');
-	$('#barnard-video').addClass('active');
-}
-
-function toColumbiaRegistrationVideo(button){
-
-	$('#barnard-video').addClass('hidden');
-	$('#quick-tips-video').addClass('hidden');
-	$('#columbia-video').removeClass('hidden');
-
-	$('#barnard-video').removeClass('active');
-	$('#quick-tips-video').removeClass('active');
-	$('#columbia-video').addClass('active');
-}
-
-function toQuickTipsVideo(button){
-
-	$('#barnard-video').addClass('hidden');
-	$('#columbia-video').addClass('hidden');
-	$('#quick-tips-video').removeClass('hidden');
-
-
-	$('#barnard-button').removeClass('active');
-	$('#columbia-button').removeClass('active');
-	$('#quick-tips-button').addClass('active');
-}
 
 function toManhattanMap(button) {
 	$('#food-map').css('background', 'url("http://static.thousandwonders.net/Manhattan.640.12979.jpg") 50% 0');
@@ -128,6 +103,14 @@ function setActive(element, classname) {
 	});
 	$(toActive).addClass('active');
 	return toActive;
+}
+
+function setVisible(id, classname) {
+	$(classname).each(function (key, value) {
+		$(this).addClass('hidden');
+	});
+	$(id).removeClass('hidden');
+	return $(id);
 }
 
 

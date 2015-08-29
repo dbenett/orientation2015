@@ -174,13 +174,13 @@
 				<h1> How to Register </h1>
 				<!--toggle between Barnard and Columbia videos-->
 				<div style="text-align: center;">
-					<button id="quick-tips-button" class="orientation-button active" onclick="toQuickTipsVideo">Quick Tips</button>
-					<button id="columbia-button" class="orientation-button" onclick="toColumbiaRegistrationVideo">Columbia</button>
-					<button id="barnard-button" class="orientation-button" onclick="toBarnardRegistrationVideo">Barnard</button>
+					<button class="video orientation-button active" onclick="selectVideo(this)">Quick Tips</button>
+					<button class="video orientation-button" onclick="selectVideo(this)">Columbia</button>
+					<button class="video orientation-button" onclick="selectVideo(this)">Barnard</button>
 				</div>
-				<iframe width="560" height="315" style="margin:38px auto 30px auto; display:block;" src="https://www.youtube.com/embed/WSk7_I-WHV8" frameborder="0" allowfullscreen id= "quick-tips-video"></iframe>
-				<iframe width="560" height="315" style="margin:38px auto 30px auto; display:block;" src="https://www.youtube.com/embed/WSk7_I-WHV8" frameborder="0" allowfullscreen id= "barnard-video" class="hidden"></iframe>
-				<iframe width="560" height="315" style="margin:38px auto 30px auto; display:block;" src="https://www.youtube.com/embed/WSk7_I-WHV8" frameborder="0" allowfullscreen id= "columbia-video" class="hidden"></iframe>
+					<iframe width="560" height="315" style="margin:20px auto 30px auto; display:block;" src="https://www.youtube.com/embed/WSk7_I-WHV8" frameborder="0" allowfullscreen id= "quick-tips-video" class="registration-iframe"></iframe>
+					<iframe width="560" height="315" style="margin:20px auto 30px auto; display:block;" src="https://www.youtube.com/embed/NjS64HYm32M" frameborder="0" id="columbia-video" class="registration-iframe hidden" allowfullscreen></iframe>
+					<iframe width="560" height="315" style="margin:20px auto 30px auto; display:block;"  src="https://www.youtube.com/embed/_ABk7TmjnVk" frameborder="0" allowfullscreen id= "barnard-video" class="registration-iframe hidden"></iframe>
 				<h2></h2>
 				<h1> Registration tools: a guide </h1>
 				<div class="row">
