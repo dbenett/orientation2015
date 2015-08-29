@@ -1,0 +1,61 @@
+<issue:>LEADERSHIP & CAREER DEVELOPMENT
+<resource:>Barnard Career Development
+<resource:>Center for Career Education
+<resource:>Office of Preprofessional Advising
+<resource:>Athena Center for Leadership Studies
+<resource:>Barnard Speaking Center
+<issue:>ACADEMIC SUPPORT
+<resource:>Center for Student Advising
+<resource:>Office of the Dean of Studies
+<resource:>Office of the Dean of Students
+<resource:>Academic Resource Center
+<resource:>Academic Resources in Support of Excellence
+<resource:>Barnard Writing Center
+<resource:>Columbia Writing Center
+<issue:>STUDYING ABROAD
+<resource:>Office of Global Programs and Fellowships
+<resource:>Barnard Office of International and Intercultural Student Programs
+<resource:>The CU on the Road Travel Medicine Program
+<resource:>Alternative Break Program
+<issue:>SOCIOECONOMIC SUPPORT
+<resource:>Resources via First-Generation Low Income Partnership
+<resource:>Resources via QuestBridge
+<resource:>Urban New York
+<resource:>Office of Financial Aid
+<resource:>Student Financial Services
+<issue:>MENTAL HEALTH & WELLNESS
+<resource:>Alice! Health Promotion
+<resource:>Barnard Well-Woman
+<resource:>Barnard Rosemary Furman Counseling Center
+<resource:>Counseling and Psychological Services (CPS)
+<resource:>Nightline
+<issue:>MEDICAL SERVICES
+<resource:>Columbia University Emergency Medical Service (CUEMS)
+<resource:>Barnard Alcohol and Substance Awareness Program (ASAP)
+<resource:>Columbia Medical Services
+<resource:>Barnard Primary Care Health Services
+<resource:>Go Ask Alice!
+<resource:>Office of Disability Services (Columbia)
+<issue:>FITNESS & NUTRITION
+<resource:>Dodge Fitness Center
+<resource:>Columbia Dining Registered Dietitian
+<resource:>Fitness & Nutrition via Columbia Medical Services
+<issue:>IDENTITY
+<resource:>Columbia Mentoring Initiative
+<resource:>LGBTQ@Columbia
+<resource:>International@Columbia
+<resource:>Gay Health Advocacy Project (GHAP)
+<resource:>Office of the University Chaplain
+<resource:>International Students and Scholars Office
+<resource:>Barnard Center for Research on Women
+<issue:>SAFETY
+<resource:>Sexual Violence Response (SVR) & Rape Crisis/Anti-Violence Support Center
+<resource:>The Office of Student Conduct and Community Standards
+<resource:>Public Safety
+<resource:>Ombud’s Office
+<issue:>RESIDENTIAL LIFE & CAMPUS SERVICES
+<resource:>Hartley Hospitality Desk
+<resource:>Barnard Residential Life and Housing
+<resource:>Faculties in Residence
+<resource:>Package Center
+<resource:>Student Services + ID Center

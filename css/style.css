@@ -154,15 +154,15 @@
 		background-color: rgba(127, 167, 197, .95);
 		font-family:"Lato", sans-serif;
 		font-size:17px;
-		padding:12px 31px;
-		width: 175px;
-		height: 50px;
 		text-decoration:none;
 		outline: 0;
 		margin-right: 6px;
 		margin-bottom: 10px;
+		width: 175px;
+		height: 50px;
 		vertical-align: middle;
 		position: relative;
+		white-space: normal !important;
 	}
 
 	.orientation-button:hover {
@@ -190,7 +190,6 @@
 
 
 /* SLIDESHOW STYLING */
-
 	.slideshow-wrapper {
 	  width: 100%;
 	  height: 300px;
@@ -238,6 +237,7 @@
 	  width: 100%;
 	  left: 0;
 	  top: 0;
+	  height: 400px;
 	  }
 
 	.callbacks img {
@@ -245,7 +245,7 @@
 	  position: relative;
 	  z-index: 1;
 	  width: 100%;
-	  height: auto;
+	  max-height: 100%;
 	  border: 0;
 	}
 
@@ -329,8 +329,8 @@
 	margin-right: 6px;
 	float: none;
     margin: 0 auto;
-   margin-top: 50px;
-   color:white ;
+   	margin-top: 50px;
+   	color:white;
 	}
 
 	.get-started:hover {
@@ -343,6 +343,17 @@
 		background-color: rgba(47, 87, 117, .95);
 	}
 
+	.get {
+		color: white;
+	}
+	.get:hover{
+		color: white;
+		text-decoration: none;
+	}
+	.get:visited{
+		color: white;
+		text-decoration: none;
+	}
 	@media screen and (max-width: 600px) {
 	  .callbacks_nav {
 	    top: 47%;
@@ -351,7 +362,7 @@
 
 
 /* FIRST SLIDE STYLING (PLAIN IMAGE/WELCOME MESSAGE)*/
-	#slide1{
+	#welcome{
 		background:url('../img/nsopcover2.jpg') 50% 80% no-repeat;
 		color: #fff;
 		margin: 0;
@@ -370,7 +381,6 @@
 		display: block;
 		font-family: "Lato", sans-serif;
 		font-weight: 700;
-		font-size: 100px;
 		line-height: 150px;
 		position: static;
 		right: 0;
@@ -383,7 +393,16 @@
 		position: relative;
 		margin: 0 auto;
 	}
-
+	@media(min-width: 1200px) {
+		#orientation-title {
+			font-size: 100px;
+		}
+	}
+	@media(max-width: 1199px) {
+		#orientation-title {
+			font-size: 75px;
+		}
+	}
 	#welcome-title {
 		font-size: 36px;
 		text-align: center;
@@ -391,7 +410,7 @@
 	}
 
 	#welcome-message{
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 		padding: 30px 40px;
 	   	background: rgb(200, 200, 200); /* The Fallback */
@@ -407,11 +426,12 @@
 	.welcome-b{
 		background: rgb(200, 200, 200); /* The Fallback */
 		background: rgba(200, 200, 200, .6);
+		color: white;
 	}
 
 
 /* SECOND SLIDE STYLING */
-	#slide2{
+	#course-registration{
 		width: 100%;
 		background-color: #fff;
 		color: #333333;
@@ -458,7 +478,7 @@
 		font-size: 16px;
 	}
 
-	#slide2 li {
+	#course-registration li {
 		line-height: 18px;
 		color: black;
 		font-size: 16px;
@@ -472,7 +492,7 @@
 
 
 /* THIRD SLIDE STYLING */
-	#slide3{
+	#food{
 		background-color: black; /* fallback */
 	   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 	   				url('../img/nsopcover2.jpg') 50% 0 no-repeat fixed;
@@ -482,7 +502,7 @@
 		background-size: cover;
 	}
 
-	#slide3 h1, #slide3 h2 {
+	#food h1, #food h2 {
 		color: white;
 	}
 
@@ -538,13 +558,13 @@
 
 /* FOURTH SLIDE STYLING */
 
-	#slide4 {
+	#subway {
 		background-color: #fff;
 		color: black;
 		padding: 80px 0 80px 0;
 	}
 
-	#slide4 h1, #slide4 h2 {
+	#subway h1, #subway h2 {
 		color: black;
 	}
 
@@ -648,7 +668,7 @@
 
 /* FIFTH SLIDE STYLING */
 
-	#slide5{
+	#traditions{
 	   	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 	   				url('../img/nsopcover2.jpg') 50% 0 no-repeat fixed;
 		margin: 0 auto;
@@ -744,13 +764,13 @@
 
 
 /* SIXTH SLIDE STYLING */
-	#slide6 {
+	#resources {
 		background-color: #fff;
 		color: black;
 		padding: 80px 0 80px 0;
 	}
 
-	#slide6 h1, #slide6 h2 {
+	#resources h1, #resources h2 {
 		color: black;
 	}
 
@@ -761,7 +781,7 @@
 
 
 /* SEVENTH SLIDE STYLING */
-	#slide7{
+	#groups{
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		   				url('../img/nsopcover2.jpg') 50% 0 no-repeat fixed;
 		margin: 0 auto;
@@ -833,30 +853,30 @@
 		margin: 0 auto;
 	}
 
-	#longform-descriptions h2 {
+	#longform-descriptions h2, #resource-longform-description h2 {
 		font-size: 14px;
 		text-align: left;
 	}
 
 
 /* EIGHTH and TENTH SLIDE STYLING */
-	#slide8, #slide10 {
+	#stories, #spaces {
 		background-color: #fff;
 		color: black;
 		padding: 80px 0 80px 0;
 		height: auto;
 	}
 
-	#slide8 h1, #slide8 h2, #slide10 h1, #slide10 h2 {
+	#stories h1, #stories h2, #spaces h1, #spaces h2 {
 		color: black;
 	}
 
-	#slide8 img, #slide10 img {
+	#stories img, #spaces img {
 		width: 100%;
 		max-height: 200px;
 		opacity: .5;
 	}
-	#slide8 img:hover, #slide10 img:hover {
+	#stories img:hover, #spaces img:hover {
 		opacity: .2;
 		cursor: pointer;
 	}
@@ -874,14 +894,14 @@
 		display:table;
 		visibility: hidden;
 	}
-	#slide8 img:hover + div > .image-text{
+	#stories img:hover + div > .image-text{
 		visibility: hidden;
 	}
-	#slide8 img:hover + div > .subtitle-image-text {
+	#stories img:hover + div > .subtitle-image-text {
 		visibility: visible;
 	}
 
-	#slide8 img:active, #slide10 img:active {
+	#stories img:active, #spaces img:active {
 		opacity: .2;
 	}
 
@@ -912,7 +932,7 @@
 
 
 /* NINTH SLIDE STYLING */
-	#slide9{
+	#who{
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		   				url('../img/nsopcover2.jpg') 50% 0 no-repeat fixed;
 		margin: 0 auto;
@@ -1030,15 +1050,39 @@
 			background-color: rgba(127, 167, 197, .95);
 			color: white;
 			font-family: "Lato", sans-serif;
-			font-size: 14px;
 			display: inline-block;
-			width: 100px;
 			cursor: pointer;
 		}
 
-		.hierarchy-position {
-			font-size: 12px;
+		@media(min-width: 800px) {
+		.tree li a{
+				font-size: 12px;
+				width: 80px;
+			}
+			.hierarchy-position {
+				font-size: 10px;
+			}
 		}
+		@media(min-width: 1000px) {
+		.tree li a{
+				font-size: 14px;
+				width: 100px;
+			}
+			.hierarchy-position {
+				font-size: 12px;
+			}
+		}
+		@media(min-width: 1400px) {
+		.tree li a{
+				font-size: 16px;
+				width: 120px;
+			}
+			.hierarchy-position {
+				font-size: 14px;
+			}
+		}
+
+
 
 		/*Time for some hover effects*/
 		.tree li a:hover {
