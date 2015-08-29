@@ -256,39 +256,35 @@
 
 <div id="slide4">
 	<div class="slide-title">Subway Map</div>
-	<div class="space-for-ad">
 		<div class="fluid-container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1> Select a destination on the <div id="train-name">1</div> to begin exploring </h1>
-					<div id="subway-line">
-						<div id="subway-stops-container">
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
-							<button class="subway-stop"><div class="subway-label">241st Street</div></button>
+						<h1 class="left" style="margin-left:15px;"> Select a destination on the <div id="train-name">1</div> to begin exploring </h1>
+					<div class="col-xs-5">
+						<div id="subway-line">
+							<div id="subway-stops-container">
+								<button class="subway-stop"><div class="subway-label">168th Street</div></button>
+								<button class="subway-stop"><div class="subway-label">125th Street</div></button>
+								<button class="subway-stop"><div class="subway-label">79th Street</div></button>
+								<button class="subway-stop"><div class="subway-label">66th Street</div></button>
+								<button class="subway-stop"><div class="subway-label">50th Street</div></button>
+								<button class="subway-stop"><div class="subway-label">34th Street</div></button>
+								<button class="subway-stop"><div class="subway-label">23rd Street</div></button>
+								<button class="subway-stop"><div class="subway-label">14th Street</div></button>
+								<button class="subway-stop"><div class="subway-label" style="bottom: 440%; left: -12px;">Christopher Street</div></button>
+								<button class="subway-stop"><div class="subway-label" style="bottom: 370%; left: -12px;">Houston Street</div></button>
+								<button class="subway-stop"><div class="subway-label" style="left: -12px;">South Ferry</div></button>
+							</div>
 						</div>
+						<h1 style="font-size: 21px;">Click a dot to see more information:</h1>
+						<img src="img/subway_stops/14th_Street.jpg" id="subway-stop-map"/>
+					</div>
+					<div class="col-xs-7">
+						<div id="subway-area-site"></div>
 					</div>
 				</div>
-				<div class="col-xs-5">
-					<h1 style="font-size: 21px;">Click a dot to see more information</h1>
-					<div id="subway-stop-map"></div>
-				</div>
-
-				<div class="col-xs-7">
-					<div id="subway-area-site"></div>
-
-				</div>
-
 			</div>
 		</div>
-	</div>
 </div> 
 
 <!-- ########################################### SLIDE 5 ##########################################################  -->
@@ -815,7 +811,7 @@
 			      </div>
 			    </div>
 
-				<div style="margin-top: 150px; display:block; text-align: center;">
+				<div style="margin-top: 170px; display:block; text-align: center;">
 					<h1> You have completed <div id="tradition-count">0</div> <div id="tradition-plural" style="display:inline;">traditions</div> so far! </h1>
 				</div>
 
@@ -1850,35 +1846,28 @@
 
 </body>
 </html>
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/orientation.js"></script>
   	<script src="js/responsiveslides.min.js"></script>
 
   		<script>
    
-	<!----- JQUERY FOR SLIDING NAVIGATION --->   
-	$(document).ready(function() {
-	  $('a[href*=#]').each(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-	    && location.hostname == this.hostname
-	    && this.hash.replace(/#/,'') ) {
-	      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-	      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-	       if ($target) {
-	         var targetOffset = $target.offset().top;
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
 
-	<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-	         $(this).click(function() {
-	            $("#nav li a").removeClass("active");
-	            $(this).addClass('active');
-	           $('html, body').animate({scrollTop: targetOffset}, 1000);
-	           return false;
-	         });
-	      }
-	    }
-	  });
+		    var target = this.hash;
+		    var $target = $(target);
+
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
 	});
+
 
     // You can also use "$(window).load(function() {"
     $(function () {
