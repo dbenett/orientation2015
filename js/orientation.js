@@ -2,7 +2,6 @@ function selectVideo(sender){
 	var clicker=setActive(sender, '.video');
 
 	var vidID = '#'+$(clicker).text().toLowerCase().replace(' ', '-')+'-video';
-	console.log(vidID);
 	setVisible(vidID, '.registration-iframe');
 }
 	
