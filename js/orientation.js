@@ -89,3 +89,19 @@ function selectResource(sender) {
 	$(clicked).addClass('active');
 }
 
+function selectSubwayStop(sender) {
+	var clicked = setActive(sender, '.subway-stop');
+
+	var imgPath = 'img/subway_stops/' + $(clicked).text().replace(' ', '_') +'.jpg';
+	$('#subway-stop-map').attr('src', imgPath);
+}
+
+function setActive(element, classname) {
+	var toActive = jQuery(element);
+	$(classname).each(function (key, value) {
+		$(this).removeClass('active');
+	});
+	$(toActive).addClass('active');
+	return toActive;
+}
+
