@@ -324,7 +324,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	display:inline-block;
 	cursor:pointer;
 	background-color: rgb(127, 167, 197);
-	background-color: rgba(127, 167, 197, .95);
+	background-color: rgba(200, 200, 200, .6);
 	font-family:"Lato", sans-serif;
 	font-size:17px;
 	padding:12px 31px;
@@ -335,6 +335,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	float: none;
     margin: 0 auto;
   margin-top: 50px;
+  color:white ;
 	}
 
 	.newsletter-signup:hover {
@@ -351,7 +352,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	display:inline-block;
 	cursor:pointer;
 	background-color: rgb(127, 167, 197);
-	background-color: rgba(127, 167, 197, .95);
+	background-color: rgba(200, 200, 200, .6);
 	font-family:"Lato", sans-serif;
 	font-size:17px;
 	padding:12px 31px;
@@ -362,6 +363,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	float: none;
     margin: 0 auto;
    margin-top: 50px;
+   color:white ;
 	}
 
 	.get-started:hover {
@@ -417,6 +419,10 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	#welcome-text{
 		text-align: justify;
 
+	}
+	.welcome-b{
+		background: rgb(200, 200, 200); /* The Fallback */
+		background: rgba(200, 200, 200, .6);
 	}
 
 /* SECOND SLIDE STYLING */
