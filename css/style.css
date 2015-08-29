@@ -1,134 +1,125 @@
-/*
-Theme Name: Simple Parallax Website
-Description: Simple Parallax Scrolling Effect
-Author: Samuel Dalusung
-*/
-
 /* GENERAL STYLING
 --------------------------------------------------------*/
 
-body{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
+	body{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
 
-h1 { 
-    font-family:"Lato", sans-serif;
-	font-size: 24px;
-	font-weight: 500;
-	text-align: center;
-	color: black;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	line-height: 26px;
-}
+	h1 { 
+	    font-family:"Lato", sans-serif;
+		font-size: 24px;
+		font-weight: 500;
+		text-align: center;
+		color: black;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		line-height: 26px;
+	}
 
-h2 {
-    font-family:"Lato", sans-serif;
-   	font-size: 18px;
-   	text-align: center;
-   	font-weight: 500;
-   	color: black;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	line-height: 20px;
-}
+	h2 {
+	    font-family:"Lato", sans-serif;
+	   	font-size: 18px;
+	   	text-align: center;
+	   	font-weight: 500;
+	   	color: black;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		line-height: 20px;
+	}
 
-h3 {
-   font-family: Oswald;
-   font-weight: normal;
-   font-size: 16px;
-   text-align: center;
-   margin: 5px 0;
-	padding: 0;
-	z-index: 1;
-	position: relative;
-}
+	h3 {
+	   font-family: Oswald;
+	   font-weight: normal;
+	   font-size: 16px;
+	   text-align: center;
+	   margin: 5px 0;
+		padding: 0;
+		z-index: 1;
+		position: relative;
+	}
 
 
-.space-for-ad {
-	margin-right: 120px;
-}
+	.space-for-ad {
+		margin-right: 120px;
+	}
 
-.center {
-	margin: 0 auto;
-}
-.content{
-}
+	.center {
+		margin: 0 auto;
+	}
+	.content{
+	}
 
-.clear {
-	clear: both;
-}
+	.clear {
+		clear: both;
+	}
 
-.hidden {
-	visibility: hidden;
-}
+	.hidden {
+		visibility: hidden;
+	}
 
-.no-padding {
-	padding: 0 !important;
-	margin: 0 !important;
-  [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
+	.no-padding {
+		padding: 0 !important;
+		margin: 0 !important;
+	  [class*="col-"] {
+	    padding-left: 0 !important;
+	    padding-right: 0 !important;
+	  }
+	}
+
 
 /* HEADER & NAVIGATION */
 
-#header { 
-	width: 100%; 
-   	background: rgb(200, 192, 183); /* The Fallback */
-   	background: rgba(197, 207, 217, .95); 
-   	height: 80px; 	
-	position: fixed;
-	z-index: 5;
-}
+	#header { 
+		width: 100%; 
+	   	background: rgb(200, 192, 183); /* The Fallback */
+	   	background: rgba(197, 207, 217, .95); 
+	   	height: 80px; 	
+		position: fixed;
+		z-index: 5;
+	}
 
-#nav {
-	width: 100%;
-	margin-top: 0px;
-	text-align: center;
-}
+	#nav {
+		width: 100%;
+		margin-top: 0px;
+		text-align: center;
+	}
 
-#nav ul{
-	list-style: none;
-}
+	#nav ul{
+		list-style: none;
+	}
 
-#nav li{
-	display: inline-block;
-	padding-right: 20px;
-	text-align: center;
-}
+	#nav li{
+		display: inline-block;
+		padding-right: 20px;
+		text-align: center;
+	}
 
-#nav li a {
-	color: rgb(17, 63, 110);
-	opacity:0.6;
-	font-size: 20px;
-	text-decoration: none;
-	font-family: 'Lato', sans-serif;
-	outline: 0;
-}
-#nav li a.active {
-	color: rgb(17, 63, 110);
-	opacity:1;
-}
-#nav li a:hover {
-	color: rgb(17, 63, 110);
-	opacity:1;
-}
+	#nav li a {
+		color: rgb(17, 63, 110);
+		opacity:0.6;
+		font-size: 20px;
+		text-decoration: none;
+		font-family: 'Lato', sans-serif;
+		outline: 0;
+	}
+
+	#nav li a:hover {
+		color: rgb(17, 63, 110);
+		opacity:1;
+	}
 
 
 /* AD */
-#ad {
-	width: 120px;
-	height: 600px;
-	background-color: gray;
-	position: fixed;
-	bottom: 50px;
-	right: 0;
-}
-
+	#ad {
+		width: 120px;
+		height: 600px;
+		background-color: gray;
+		position: fixed;
+		bottom: 50px;
+		right: 0;
+	}
 
 
 /* GENERAL STYLING */
@@ -154,7 +145,6 @@ h3 {
 	}
 
 	/*inline block has default 4px margin between elements (so margin-right set at 6 to equal checkerboard's 10px padding*/
-
 
 	.orientation-button {
 		border:0;
@@ -197,6 +187,7 @@ h3 {
 	.bold {
 		font-weight: 900;
 	}
+
 
 /* SLIDESHOW STYLING */
 
@@ -318,11 +309,11 @@ h3 {
 	background-color:transparent;
 	background-color: rgba(97, 137, 167, .95);
 	outline: 0;
-}
+	}
 
-.newsletter-signup.active {
-	background-color: rgba(47, 87, 117, .95);
-}
+	.newsletter-signup.active {
+		background-color: rgba(47, 87, 117, .95);
+	}
 	.get-started{
 	border:0;
 	display:inline-block;
@@ -346,11 +337,11 @@ h3 {
 	background-color:transparent;
 	background-color: rgba(97, 137, 167, .95);
 	outline: 0;
-}
+	}
 
-.get-started.active {
-	background-color: rgba(47, 87, 117, .95);
-}
+	.get-started.active {
+		background-color: rgba(47, 87, 117, .95);
+	}
 
 	@media screen and (max-width: 600px) {
 	  .callbacks_nav {
@@ -360,7 +351,6 @@ h3 {
 
 
 /* FIRST SLIDE STYLING (PLAIN IMAGE/WELCOME MESSAGE)*/
-
 	#slide1{
 		background:url('../img/nsopcover2.jpg') 50% 80% no-repeat;
 		color: #fff;
@@ -369,11 +359,29 @@ h3 {
 		background-size: cover;
 		width: 100%;
 	}
-
-	#plain-image{
-		margin-top: -50px;
+	#orientation-2015{
+		margin-top: -100px;
 		text-align: center;
-		height: 800px;
+		position: relative;
+		height: 100vh;
+		width: 100%;
+	}
+	#orientation-title {
+		display: block;
+		font-family: "Lato", sans-serif;
+		font-weight: 700;
+		font-size: 100px;
+		line-height: 150px;
+		position: static;
+		right: 0;
+		margin-left: 150px;
+	}
+	#orientation-logo-box {
+		height: 150px;
+		width: 80%;
+		display: block;
+		position: relative;
+		margin: 0 auto;
 	}
 
 	#welcome-title {
@@ -400,6 +408,7 @@ h3 {
 		background: rgb(200, 200, 200); /* The Fallback */
 		background: rgba(200, 200, 200, .6);
 	}
+
 
 /* SECOND SLIDE STYLING */
 	#slide2{
@@ -460,6 +469,7 @@ h3 {
 	.hidden{
 		visibility: none;
 	}
+
 
 /* THIRD SLIDE STYLING */
 	#slide3{
@@ -524,6 +534,8 @@ h3 {
 	.mels-description{
 		text-align: justify;
 	}
+
+
 /* FOURTH SLIDE STYLING */
 
 	#slide4 {
@@ -633,6 +645,7 @@ h3 {
 		background: rgb(200,200,200);
 	}
 
+
 /* FIFTH SLIDE STYLING */
 
 	#slide5{
@@ -729,6 +742,7 @@ h3 {
 		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	}
 
+
 /* SIXTH SLIDE STYLING */
 	#slide6 {
 		background-color: #fff;
@@ -740,10 +754,11 @@ h3 {
 		color: black;
 	}
 
-.resources-instructions{
-	margin-top: -1px;
-	margin-bottom: -1px;
-}
+	.resources-instructions{
+		margin-top: -1px;
+		margin-bottom: -1px;
+	}
+
 
 /* SEVENTH SLIDE STYLING */
 	#slide7{
@@ -823,6 +838,7 @@ h3 {
 		text-align: left;
 	}
 
+
 /* EIGHTH and TENTH SLIDE STYLING */
 	#slide8, #slide10 {
 		background-color: #fff;
@@ -893,7 +909,6 @@ h3 {
 		width:100%;
 		display:table;
 	}
-
 
 
 /* NINTH SLIDE STYLING */
