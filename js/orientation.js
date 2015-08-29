@@ -44,6 +44,8 @@ function toMorningsideMap(button) {
 	$('#manhattan-button').removeClass('active');
 }
 
+
+// START 116 TRADITIONS CODE //
 var traditionCount=0;
 
 function clickTradition(sender) {
@@ -64,6 +66,29 @@ function clickTradition(sender) {
 		$('#tradition-plural').text('traditions');		
 	}
 }
+
+function fbShare(){
+	var name;
+	var picture = "http://columbiaspectator.com/features/orientation-2014-interactive-116-traditions/img/116_trad_graphic.jpg";
+	var link = 'http://columbiaspectator.com/features/orientation-2014-interactive-116-traditions/';
+	if (traditionCount == null){
+		name= "116 Traditions";
+	}
+	else {
+		name= "I've completed "+ traditionCount + " of 116 Columbia traditions! How many have you completed?";
+	}
+
+	FB.ui(
+	 {
+	  method: 'feed',
+	  link: link,
+	  name: name,
+	  description: description,
+	  picture: picture
+	}, function(response){});
+}
+// END 116 TRADITIONS CODE //
+
 
 function selectCategory(sender) {
 	var clicked = jQuery(sender);
@@ -104,4 +129,6 @@ function setActive(element, classname) {
 	$(toActive).addClass('active');
 	return toActive;
 }
+
+
 

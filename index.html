@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Orientation 2015</title>
@@ -13,7 +14,15 @@
 </head> 
 	
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <!-- ########################################### NAVBAR ##########################################################  --> 
 <header id="header">
@@ -808,11 +817,19 @@
 		      </div>
 		    </div>
 
+
 			<div style="margin-top: 170px; display:block; text-align: center;">
 				<h1> You have completed <div id="tradition-count">0</div> <div id="tradition-plural" style="display:inline;">traditions</div> so far! </h1>
+				<div style="position: relative; width: 120px; text-align: center; display: block; margin: 0 auto;">
+					<div style="float:left;">
+						<div class="fb-share-button" data-href="http://www.newatcu.com/#slide5" data-layout="button"></div>
+					</div>
+					<div style="float:right;">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://newatcu.com/#slide5" data-text="See how many Columbia traditions you've completed!" data-count="none" data-hashtags="newatcu">Tweet</a>
+					</div>
+				</div>
+
 			</div>
-
-
 		</div>
 	</div>
 </div> 
@@ -825,7 +842,7 @@
 	<div class="fluid-container">
 			<div class="row">
 				<div class="col-xs-4">
-					<h1 class="resources-instructions">Select an issue:</h1>
+					<h1>Select an issue:</h1>
 					<div class="row checkerboard">
 						<button class="resource orientation-button active" onClick="selectResource(this)">Cultural</button>
 						<button class="resource orientation-button" onClick="selectResource(this)">Greek Life</button>
@@ -850,7 +867,7 @@
 
 					<div style="height: 15px;border-bottom:solid 2px gray; width: 100%; margin-bottom: 5px;"></div>
 
-					<h1 class="resources-instructions">Select a resource:</h1>
+					<h1>Select a resource:</h1>
 
 					<div class="row checkerboard">
 						<button class="resource orientation-button active" onClick="selectResource(this)">Cultural</button>
@@ -1676,13 +1693,7 @@
 		      <div class="callbacks_container">
 		        <ul class="rslides" id="ss-butler-library">
 		          <li>
-		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_01.jpg" alt="">
-		          </li>
-		          <li>
-		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_02.jpg" alt="">
-		          </li>
-		          <li>
-		            <img src="img/study_spaces/hungarian_pastry_shop/Hungarian_03.jpg" alt="">
+		            <img src="img/study_spaces/butler_library/butler_1.jpg" alt="">
 		          </li>
 		      </ul>
 		      </div>

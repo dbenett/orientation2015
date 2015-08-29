@@ -468,8 +468,8 @@ h3 {
 	   				url('../img/nsopcover2.jpg') 50% 0 no-repeat fixed;
 		color: #fff;
 		padding: 80px 0 80px 0;
+		height: auto;
 		background-size: cover;
-		overflow: hidden;
 	}
 
 	#slide3 h1, #slide3 h2 {
@@ -641,7 +641,7 @@ h3 {
 		margin: 0 auto;
 		padding: 80px 0 80px 0;
 		color: #fff;
-		height: 800px;
+		min-height: 800px;
 		background-size: cover;
 	}
 
@@ -734,7 +734,6 @@ h3 {
 		background-color: #fff;
 		color: black;
 		padding: 80px 0 80px 0;
-		height: 800px;
 	}
 
 	#slide6 h1, #slide6 h2 {
