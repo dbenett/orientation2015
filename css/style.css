@@ -403,12 +403,21 @@
 		right: 0;
 		margin-left: 150px;
 	}
+	#orientation-title-mobile{
+		visibility: hidden;
+	}
 	#orientation-logo-box {
 		height: 150px;
 		width: 80%;
 		display: block;
 		position: relative;
 		margin: 0 auto;
+	}
+
+	#orientation-logo {
+		position: absolute;
+		bottom: 18vh;
+		right: 40px;
 	}
 
 	.product-suite {
@@ -423,7 +432,6 @@
 		margin-right: auto;
 		height: 375px;
 		width: 570px;
-
 	}
 
 	@media(min-width: 1200px) {
@@ -469,6 +477,35 @@
 		color: white;
 	}
 
+		#orientation-logo-box img{
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			bottom: 0;
+			display: block;
+		}
+	@media(max-width: 992px) {
+		#welcome-message{
+			width: 100%;		
+		}
+		.product-suite {
+			visibility: hidden;
+			width: 0;
+			height: 0;
+		}
+		#orientation-title {
+			visibility: hidden;
+		}
+		#orientation-logo-box img{
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+		#header {
+			visibility: hidden;
+		}
+	}
 
 /* SECOND SLIDE STYLING */
 	#dates-to-remember {
@@ -537,6 +574,13 @@
 	.hidden{
 		visibility: none;
 	}
+	@media(max-width: 991px) {
+		.hidden-small {
+			visibility: hidden;
+			width: 0;
+			height: 0;
+		}
+	}
 
 
 /* THIRD SLIDE STYLING */
@@ -566,6 +610,26 @@
 		margin: 3vw auto 3vw auto;
 		position: relative;
 	}
+
+	@media(max-width: 991px) {
+		.food-map-container {
+			width: 36vw;
+			height: 54vw;
+			display: block;
+			margin: 3vw auto 3vw auto;
+			position: relative;
+		}
+	}
+	@media(max-width: 767px) {
+		.food-map-container {
+			width: 74vw;
+			height: 111vw;
+			display: block;
+			margin: 3vw auto 3vw auto;
+			position: relative;
+		}
+	}
+
 
 	#food-map {
 		width: 100%;
@@ -782,6 +846,7 @@
 		cursor:pointer;
 		outline: 0;
 		position: relative;
+		z-index: 2;
 	}
 
 	.subway-stop:hover {
