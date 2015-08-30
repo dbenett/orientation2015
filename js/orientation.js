@@ -1,4 +1,3 @@
-
 var campusResources;
 var resourceButtonLabels;
 var resourceButtons;

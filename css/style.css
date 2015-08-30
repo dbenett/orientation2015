@@ -110,15 +110,16 @@
 		opacity:1;
 	}
 
-
 /* AD */
 	#ad {
 		width: 120px;
 		height: 600px;
-		background-color: gray;
-		position: fixed;
-		bottom: 50px;
+		background: url('../img/thai_market_ad.png') ;
+		background-size: 100%;
+		top: 120%;
 		right: 0;
+		position: absolute;
+		z-index:2;
 	}
 
 
@@ -689,7 +690,7 @@
 	}
 
 	.eat-cheap-blurb {
-		padding-bottom: 10px;
+		margin-bottom: -5px;
 	}
 
 	.eat-cheap-blurb h1 {
