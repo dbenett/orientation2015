@@ -457,6 +457,13 @@
 
 
 /* SECOND SLIDE STYLING */
+	#dates-to-remember {
+		text-align: left;
+		font-family: "Lato", sans-serif;
+		font-size: 14px;
+		display: block;
+	}
+
 	#course-registration{
 		width: 100%;
 		background-color: #fff;
@@ -1049,10 +1056,10 @@
 	}
 
 	#subcategory-img {
-		background: url('http://columbiaspectator.com/sites/default/files/Holi.jpg') 50% 0;
+		/*background: url('http://columbiaspectator.com/sites/default/files/Holi.jpg') 50% 0;
 		width: 50%;
 		height: 200px;
-		margin: 0 auto;
+		margin: 0 auto;*/
 	}
 
 	#longform-descriptions h2, #resource-longform-description h2 {
