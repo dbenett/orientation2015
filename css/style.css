@@ -939,6 +939,24 @@
 		margin-bottom: -1px;
 	}
 
+	.resource-image {
+		width: 25vw;
+		height: 16vw;
+		display: block;
+		margin: 0 auto;
+	} 
+
+	#resource-longform-description > div > ul  {
+		list-style: none;
+		font-size: 18px;
+		font-family: "Lato", sans-serif;
+	}
+	#resource-longform-description > div  {
+		list-style: none;
+		font-size: 18px;
+	}
+
+
 
 /* SEVENTH SLIDE STYLING */
 	#groups{

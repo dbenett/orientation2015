@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/responsiveslides.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-</head> 
+</head>
 	
 <body style="width:100%; overflow-x:hidden;">
 
@@ -24,7 +24,8 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<!-- ########################################### NAVBAR ##########################################################  --> 
+<!-- ########################################### NAVBAR ##########################################################  -->
+
 <header id="header">
 	<nav id="nav">
 		<ul>
@@ -42,8 +43,7 @@
 	</nav>
 </header>
 
-
-<!-- ########################################### SLIDE 1 ##########################################################  -->  
+<!-- ########################################### SLIDE 1 ##########################################################  -->
 
 <div id="welcome">
 	<div id="orientation-2015">
@@ -267,7 +267,6 @@
 	</div>
 </div> 
 
-
 <!-- ########################################### SLIDE 3 ##########################################################  -->
 
 <div id="food">
@@ -352,7 +351,6 @@
 
 <!-- ########################################### SLIDE 4 ##########################################################  -->
 
-
 <div id="subway">
 	<div class="slide-title">Subway Map</div>
 		<div class="fluid-container">
@@ -393,7 +391,6 @@
 </div> 
 
 <!-- ########################################### SLIDE 5 ##########################################################  -->
-
 
 <div id="traditions">
 	<div class="slide-title">116 Traditions</div>
@@ -1142,7 +1139,6 @@
 
 <!-- ########################################### SLIDE 6 ##########################################################  -->
 
-
 <div id="resources">
 	<div class="slide-title">Campus Resources</div>
 	<div class="fluid-container">
@@ -1150,7 +1146,7 @@
 			<div class="col-xs-4">
 				<h1>Select an issue:</h1>
 				<div class="row checkerboard">
-					<button class="issue orientation-button active" onClick="selectIssue(this)">Leadership & Career Development</button>
+					<button class="issue orientation-button" onClick="selectIssue(this)">Leadership & Career Development</button>
 					<button class="issue orientation-button" onClick="selectIssue(this)">Academic Support</button>
 				</div>
 				<div class="row checkerboard">
@@ -1173,60 +1169,154 @@
 
 				<div style="height: 15px;border-bottom:solid 2px gray; width: 100%; margin-bottom: 5px;"></div>
 
-				<h1>Select a resource:</h1>
+				<h1 id="select-resource-label" class="hidden">Select a resource:</h1>
+				<div id="leadership" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Barnard Career Development</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Center for Career Education</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Office of Preprofessional Advising</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Athena Center for Leadership Studies</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Barnard Speaking Center</button>
+					</div>
+				</div>
+				<div id="academic" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Center for Student Advising</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Office of the Dean of Studies</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Office of the Dean of Students</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Academic Resource Center</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Academic Resources in Support of Excellence</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Barnard Writing Center</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Columbia Writing Center</button>
+					</div>
+				</div>
+				<div id="studying" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Office of Global Programs and Fellowships</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">BC Office of Intl. and Intercultural Student Programs</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">The CU on the Road Travel Medicine Program</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Alternative Break Program</button>
+					</div>
+				</div>
+				<div id="socioeconomic" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Resources via First-Generation Low Income Partnership</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Resources via QuestBridge</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Urban New York</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Office of Financial Aid</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Student Financial Services</button>
+					</div>
+				</div>
+				<div id="mental" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Alice! Health Promotion</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Barnard Well-Woman</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Barnard Rosemary Furman Counseling Center</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Counseling and Psychological Services</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Nightline</button>
+					</div>
+				</div>
+				<div id="medical" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Columbia University Emergency Medical Service</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Barnard Alcohol and Substance Awareness Program</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Columbia Medical Services</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Barnard Primary Care Health Services</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Go Ask Alice!</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Office of Disability Services</button>
+					</div>
+				</div>
+				<div id="fitness" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Dodge Fitness Center</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Fitness & Nutrition via Columbia Medical Services</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Columbia Dining Registered Dietitian</button>
+					</div>
+				</div>
+				<div id="identity" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Columbia Mentoring Initiative</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">LGBTQ@Columbia</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">International</br>@Columbia</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Gay Health Advocacy Project</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Office of the University Chaplain</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">International Students and Scholars Office</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Barnard Center for Research on Women</button>
+					</div>
+				</div>
+				<div id="safety" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Sexual Violence Response</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">The Office of Student Conduct and Community Standards</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Public Safety</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Ombud’s Office</button>
+					</div>
+				</div>
+				<div id="residential" class="resource-set hidden">
+					<div class="row checkerboard">
+						<button class="resource orientation-button active" onClick="selectResource(this)">Hartley Hospitality Desk</button>
+						<button class="resource orientation-button" onClick="selectResource(this)">Barnard Residential Life and Housing</button>
+					</div>
+					<div class="row checkerboard">
+							<button class="resource orientation-button" onClick="selectResource(this)">Columbia Residential Life</button>
+							<button class="resource orientation-button" onClick="selectResource(this)">Undergraduate Package Center</button>
+					</div>
+					<div class="row checkerboard">
+						<button class="resource orientation-button" onClick="selectResource(this)">Student Service Center and ID Center</button>
+					</div>
+				</div>
 
-				<div class="row checkerboard">
-					<button class="resource orientation-button active" onClick="selectResource(this)">Barnard Career Development</button>
-					<button class="resource orientation-button" onClick="selectResource(this)">Center for Career Education</button>
-				</div>
-				<div class="row checkerboard">
-						<button class="resource orientation-button" onClick="selectResource(this)">Office of Preprofessional Advising</button>
-						<button class="resource orientation-button" onClick="selectResource(this)">Athena Center for Leadership Studies</button>
-				</div>
-				<div class="row checkerboard">
-					<button class="resource orientation-button" onClick="selectResource(this)">Barnard Speaking Center</button>
-					<button class="resource orientation-button" onClick="selectResource(this)">Other Stuff</button>
-				</div>
-				<div class="row checkerboard">
-					<button class="resource orientation-button" onClick="selectResource(this)">Professional</button>
-					<button class="resource orientation-button" onClick="selectResource(this)">Airplanes</button>
-				</div>
+
 			</div>
 			<div class="col-xs-8">
 				<div class="groups-description">
-					<h1 id="subcategory-title">South Asian Groups</h1>
-					<div id="subcategory-img"></div>
+					<h1 id="resource-title">Select an issue on the left to display relevant resources</h1>
+					<img src="img/campus_resources/leadership.jpg" id="img-leadership" class="resource-image hidden">
+					<img src="img/campus_resources/academic_support.jpg" id="img-academic" class="resource-image hidden">
+					<img src="img/campus_resources/study_abroad.jpg" id="img-studying" class="resource-image hidden">
+					<img src="img/campus_resources/socioeconomic_support.jpg" id="img-socioeconomic" class="resource-image hidden">
+					<img src="img/campus_resources/mental_health.jpg" id="img-mental" class="resource-image hidden">
+					<img src="img/campus_resources/medical_services.jpg" id="img-medical" class="resource-image hidden">
+					<img src="img/campus_resources/fitness_and_nutrition.jpg" id="img-fitness" class="resource-image hidden">
+					<img src="img/campus_resources/identity.jpg" id="img-identity" class="resource-image hidden">
+					<img src="img/campus_resources/safety.jpg" id="img-safety" class="resource-image hidden">
+					<img src="img/campus_resources/res_life.jpg" id="img-residential" class="resource-image hidden">
+
 					<div id="resource-longform-description">
-						<h1>Club Zamana</h1>
-						<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
-						What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
-						Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
-						</h2>
-						<h1>Asian American Alliance</h1>
-						<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
-						What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
-						Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
-						</h2>
-						<h1>Club Zamana</h1>
-						<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
-						What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
-						Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
-						</h2>
-						<h1>Asian American Alliance</h1>
-						<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
-						What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
-						Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
-						</h2>
-						<h1>Club Zamana</h1>
-						<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
-						What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas<br>
-						Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur<br>
-						</h2>
-						<h1>Asian American Alliance</h1
-						<h2>Officers: John Doe, Joseph Doeman, Robert Whitman, and Someone Else<br>
-						What they do: Arumquae dolupta cus evellaccus essunt as qui te peleniae- cea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas <br>
-						Why you should join: Arumquae dolupta cus evellaccus essunt as qui te peleniaecea quae prerovid ea pa volum aceroreperio etur a volorum fugia doluptas quia simagnim atia sit eum volenihilla cuptatem inum faceptur <br>
-						</h2>
 					</div>
 				</div>
 			</div>
@@ -1235,7 +1325,6 @@
 </div> 
 
 <!-- ########################################### SLIDE 7 ##########################################################  -->
-
 
 <div id="groups">
 	<div class="slide-title">Student Groups</div>
