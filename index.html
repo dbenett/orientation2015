@@ -13,7 +13,6 @@
 <body style="width:100%; overflow-x:hidden;">
 
 
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -44,6 +43,7 @@
 </header>
 
 <!-- ########################################### SLIDE 1 ##########################################################  -->
+<div id="mobile-coming-soon">Mobile Site Coming Soon</div>
 
 <div id="welcome">
 	<div id="orientation-2015">
@@ -363,7 +363,7 @@
 		<div class="fluid-container">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="col-xs-5">
+					<div class="col-md-5 col-xs-12">
 						<div style="height:40px"></div>
 						<div id="subway-line">
 							<div id="subway-stops-container">
@@ -383,7 +383,7 @@
 						<h1 style="font-size: 21px;">Click a dot to see more information:</h1>
 						<img src="img/subway_stops/14th_Street.jpg" id="subway-stop-map"/>
 					</div>
-					<div class="col-xs-7">
+					<div class="col-md-7 col-xs-12">
 						<div style="height:50px"></div>
 
 						<h1 id="subway-landmark-title">	
@@ -3933,7 +3933,16 @@
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-3441642-2', 'auto');
-	ga('send', 'pageview');
+	ga('create', 'UA-XXX-X', {'allowAnchor': true});
+	ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
 
+	</script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function () {
+		jQuery('.menu a').click(function(){
+			var match = jQuery(this).attr('href').match(/#\S+/);
+			ga('send', 'pageview', location.pathname + match[0]);
+		});
+	});
 	</script>

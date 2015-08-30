@@ -6,6 +6,27 @@
 		padding: 0;
 		width: 100%;
 	}
+	#mobile-coming-soon {
+		visibility: hidden;
+	}
+	@media only screen and (max-device-width: 768px) {
+		body {
+			overflow-y:hidden;
+			overflow-x:hidden;
+		}
+		#mobile-coming-soon {
+			visibility: visible;
+			font-size: 62px;
+			text-align: center;
+			line-height: 30px;
+			position: absolute;
+			top: 40%;
+			left: 0;
+			right: 0;
+			color: white;
+			font-family: "Lato", sans-serif;
+		}
+	}
 
 	h1 { 
 	    font-family:"Lato", sans-serif;
@@ -847,6 +868,14 @@
 		outline: 0;
 		position: relative;
 		z-index: 2;
+	}
+	@media(max-width: 767px) {
+	.subway-stop {
+			margin-right: 4.4%;
+		}
+	#subway-line {
+		min-width: 300px;
+	}
 	}
 
 	.subway-stop:hover {
