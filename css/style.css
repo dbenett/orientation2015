@@ -537,12 +537,145 @@
 		width: 75%;
 	}
 
+	.food-map-container {
+		width: 26vw;
+		height: 39vw;
+		display: block;
+		margin: 3vw auto 3vw auto;
+		position: relative;
+	}
+
 	#food-map {
-		background: url('../img/morningside_heights.jpg') 50% 0;
-	  	background-size: 100% 100%;
 		width: 100%;
-		height: 600px;
-		margin: 20px 15px;
+		height: 100%;
+	}
+
+	#flat-top {
+		top: 15%;
+		right: 38%;
+	}
+
+	#the-heights {
+		left: 38%;
+		top: 50%;
+	}
+
+	#the-dam {
+		bottom: 41%;
+		right: 42%;
+	}
+	#massawa {
+		top: 18%;
+		right: 43%;
+	}
+	#broadwayaulait {
+		top:15%;
+		left:42%;
+	}
+	#mill-korean {
+		left: 38%;
+		top:46%;
+	}
+	#max-caffe {
+		top:11%;
+		right:43%;
+	}
+	#bar-1020 {
+		bottom: 45%;
+		right:42%;
+	}
+	#broadway-dive {
+		left: 40%;
+		bottom: 13%;
+	}
+
+	#marcha-cocina {
+		top:3%;
+		left:34%;
+	}
+
+	#dino-bbq {
+		left:32%;
+		top:22%;
+	}
+
+	#dead-poet {
+		left:36.5%;
+		top:42%;
+	}
+
+	#barcibo-enoteca {
+		left:36.5%;
+		top:48%;
+	}
+
+	#ippudo-westside {
+		top: 57%;
+		left:39%;
+	}
+
+	#pizza-suprema {
+		top: 68%;
+		left:39%;
+	}
+
+	#smithfield {
+		top: 70%;
+		left:44%;
+	}
+
+	#bungas-den {
+		top: 76%;
+		left:42%;
+	}
+
+	#greenwich-treehouse {
+		top: 80%;
+		left:45%;
+	}
+
+	#bar-veloce {
+		top: 84%;
+		left: 45%;
+	}
+
+	#lukes-lobster {
+		top: 95%;
+		left: 51%;
+	}
+
+	#bills-place {
+		top: 18%;
+		left: 46%;
+	}
+
+	#bathtub-gin {
+		top: 74%;
+		left:38%;
+	}
+
+	#the-garret {
+		top: 80%;
+		left:40.5%;
+	}
+
+	#thirteenth-step {
+		top: 75%;
+		left: 55%;
+	}
+
+	.restaurant-button {
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: black;
+	}
+
+	.restaurant-button:hover {
+		background-color: rgb(97, 137, 167);
+		cursor: pointer;
+;
 	}
 
 	#restaurant-description {
