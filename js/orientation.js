@@ -612,6 +612,7 @@ function selectIssue(sender) {
 
 	$('#resource-title').text($(clicked).text());
 	$('#resource-longform-description').empty();
+	$('<div><h1>Now, select a resource</h1></div>').appendTo('#resource-longform-description');
 }
 
 function selectResource(sender) {

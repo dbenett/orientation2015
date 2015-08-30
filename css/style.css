@@ -308,7 +308,7 @@
 	display:inline-block;
 	cursor:pointer;
 	background-color: rgb(127, 167, 197);
-	background-color: rgba(200, 200, 200, .6);
+	background-color: rgba(0, 0, , .5);
 	font-family:"Lato", sans-serif;
 	font-size:17px;
 	padding:12px 31px;
@@ -410,13 +410,20 @@
 		position: relative;
 		margin: 0 auto;
 	}
+
+	.product-suite {
+		padding: 50px 50px;
+		background-color: rgba(255,255,255,.5);
+		border-radius: 5px;
+	}
+
 	.product-suite-img{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		height: 375px;
 		width: 570px;
-		
+
 	}
 
 	@media(min-width: 1200px) {
@@ -436,22 +443,29 @@
 	}
 
 	#welcome-message{
-		width: 100%;
+		width: 70%;
 		margin: 0 auto;
 		padding: 30px 40px;
 	   	background: rgb(200, 200, 200); /* The Fallback */
-		background: rgba(200, 200, 200, .6);
+		background: rgba(0, 0, 0, .5);
 	    border-radius: 5px;
 	    font-size: 18px;
+	    line-height: 20px;
 		color: white; 
+		font-family: "Lato", sans-serif;
+	}
+
+	#emphasis {
+		font-weight: 700px;
+		font-size: 22px;
+		line-height:48px;
 	}
 	#welcome-text{
 		text-align: justify;
-
 	}
 	.welcome-b{
 		background: rgb(200, 200, 200); /* The Fallback */
-		background: rgba(200, 200, 200, .6);
+		background: rgba(0, 0, 0, .5);
 		color: white;
 	}
 
@@ -683,7 +697,7 @@
 	.restaurant-button:hover {
 		background-color: rgb(97, 137, 167);
 		cursor: pointer;
-;
+	;
 	}
 
 	#restaurant-description {
@@ -691,6 +705,7 @@
 		width: 100%;
 		margin-top: 20px;
 		border-radius: 5px;
+		font-family: 'Lato', sans-serif;
 		background: rgb(200,200,200);
 		background: rgba(200,200,200,.5);
 		/*background: linear-gradient(rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0));*/
@@ -698,6 +713,7 @@
 
 	.eat-cheap-blurb {
 		margin-bottom: -5px;
+		font-family: "Lato", sans-serif;
 	}
 
 	.eat-cheap-blurb h1 {
@@ -1100,7 +1116,6 @@
 		margin: auto;
 		text-align:center;
 		width:100%;
-
 		display:table;
 		visibility: hidden;
 	}
@@ -1148,8 +1163,14 @@
 		margin: 0 auto;
 		padding: 80px 0 80px 0;
 		color: #fff;
-		height: auto;
+		height: 800px;
 		background-size: cover;
+	}
+
+	.coming-soon {
+		line-height: 600px;
+		text-align: center;
+		font-size: 80px;
 	}
 
 	#hierarchy-description-bg {
