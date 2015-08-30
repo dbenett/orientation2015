@@ -159,10 +159,14 @@
 		margin-right: 6px;
 		margin-bottom: 10px;
 		width: 175px;
-		min-height: 50px;
+		height: 50px;
 		vertical-align: middle;
 		position: relative;
 		white-space: normal !important;
+	}
+
+	.resource {
+		height: 75px !important;
 	}
 
 	.orientation-button:hover {
@@ -454,7 +458,8 @@
 
 	.course-box {
 		border: 0;
-		overflow: visible;
+		overflow: hidden;
+		white-space: normal;
 		height: 150px;
 		width: 100%;
 		margin: 20px 0px 0px 20px;
@@ -464,17 +469,17 @@
 	}
 
 	.course-box:hover {
-	background-color: rgba(127, 167, 197, .95);
+		background-color: rgba(127, 167, 197, .95);
 	}
 
 	.course-box > img {
-		width: 40%;
+		width: 34%;
 		height: 100%;
+		float:left;
 	}
 
 	.course-box-text{
-		width: 60%;
-		height: 30%;
+		width: 66%;
 		float: right;
 	}
 
@@ -919,7 +924,7 @@
 
 	.image-text-container {
 		width: 95%;
-		height: 200px;
+		height: 26vh;
 		margin-left: 20px;
 		margin-bottom: 20px;
 		overflow: hidden;
@@ -982,6 +987,8 @@
 	}
 
 	/*FAMILY TREE styling (from http://thecodeplayer.com/walkthrough/css3-family-tree)*/
+
+	.chart_container { float: left; width: 950px; }
 		.tree * {
 			margin: 0; padding: 0;
 		}
@@ -1133,7 +1140,7 @@
 	.modal-bodytext-container {
 		overflow:hidden;
 		overflow-y:scroll;
-		height: 600px;
+		max-height: 600px;
 	}
 
 	.modal-h1 {
